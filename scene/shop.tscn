@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://tvpbiq4qper"]
+
+[ext_resource type="Script" uid="uid://c773egj7k0pqu" path="res://script/shop.gd" id="1_iuafe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hmeg"]
+size = Vector2(210, 212)
+
+[node name="shop" type="Area2D" unique_id=54979174]
+script = ExtResource("1_iuafe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1913695379]
+shape = SubResource("RectangleShape2D_5hmeg")
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=884701945]
+visible = false
+offset_left = -14.0
+offset_top = 30.0
+offset_right = 30.0
+offset_bottom = 54.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="CheckButton" unique_id=225858186]
+
+[node name="Panel" type="Panel" parent="CheckButton/CanvasLayer" unique_id=958643805]
+offset_left = -103.0
+offset_top = -105.0
+offset_right = 102.0
+offset_bottom = -53.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
