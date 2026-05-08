@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c773egj7k0pqu" path="res://script/shop.gd" id="1_iuafe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5hmeg"]
-size = Vector2(210, 212)
+size = Vector2(466, 432)
 
 [node name="shop" type="Area2D" unique_id=54979174]
 script = ExtResource("1_iuafe")

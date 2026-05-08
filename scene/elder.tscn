@@ -4,13 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://dvvr3tqodciim" path="res://material/Charcter_img/青蛙長老.png" id="1_e25ti"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ok0b"]
-radius = 46.872166
+radius = 155.72412
 
 [node name="Node2D" type="Area2D" unique_id=1455998611]
 script = ExtResource("1_3ok0b")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=914724589]
-scale = Vector2(0.08720707, 0.08720707)
+scale = Vector2(0.25500485, 0.25500485)
 texture = ExtResource("1_e25ti")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=434377071]
