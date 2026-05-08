@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4n50li6bgu45"
-path="res://.godot/imported/蛙得法_動作圖片.png-59acc6dbe37a7ea6886309427f944a0f.ctex"
+uid="uid://ijsp1dcfvuiu"
+path="res://.godot/imported/田雞.png-b51788e807ae7ec05bbc7db183725e26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Charcter_img/蛙得法_動作圖片.png"
-dest_files=["res://.godot/imported/蛙得法_動作圖片.png-59acc6dbe37a7ea6886309427f944a0f.ctex"]
+source_file="res://material/Charcter_img/田雞.png"
+dest_files=["res://.godot/imported/田雞.png-b51788e807ae7ec05bbc7db183725e26.ctex"]
 
 [params]
 

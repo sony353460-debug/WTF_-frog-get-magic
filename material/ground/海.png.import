@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://srjgba7blr56"
-path="res://.godot/imported/海.png-340a04ace6703269d2088ae50b201db0.ctex"
+path="res://.godot/imported/海.png-6f8665c0ff0aed51b33dfe36bd88765a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/海.png"
-dest_files=["res://.godot/imported/海.png-340a04ace6703269d2088ae50b201db0.ctex"]
+source_file="res://material/ground/海.png"
+dest_files=["res://.godot/imported/海.png-6f8665c0ff0aed51b33dfe36bd88765a.ctex"]
 
 [params]
 

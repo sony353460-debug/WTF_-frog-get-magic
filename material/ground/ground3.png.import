@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckgjobjs7yiqn"
-path="res://.godot/imported/鐘乳石地.png-9377b4dce0abc48ce5a92c35c71d60f2.ctex"
+uid="uid://6bu0m28oad6y"
+path="res://.godot/imported/ground3.png-4b34391e5635b6bc39cd3d4ab84ecf32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/鐘乳石地.png"
-dest_files=["res://.godot/imported/鐘乳石地.png-9377b4dce0abc48ce5a92c35c71d60f2.ctex"]
+source_file="res://material/ground/ground3.png"
+dest_files=["res://.godot/imported/ground3.png-4b34391e5635b6bc39cd3d4ab84ecf32.ctex"]
 
 [params]
 

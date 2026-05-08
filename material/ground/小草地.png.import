@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rdgg3oxxtcyp"
-path="res://.godot/imported/苔癬.png-8602b2bf02c7d93c83c5f8a6ec96b9b1.ctex"
+uid="uid://cdma54she4yau"
+path="res://.godot/imported/小草地.png-9e9b41c3179c7290eeb50ae511c80f11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/苔癬.png"
-dest_files=["res://.godot/imported/苔癬.png-8602b2bf02c7d93c83c5f8a6ec96b9b1.ctex"]
+source_file="res://material/ground/小草地.png"
+dest_files=["res://.godot/imported/小草地.png-9e9b41c3179c7290eeb50ae511c80f11.ctex"]
 
 [params]
 

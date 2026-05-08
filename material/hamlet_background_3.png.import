@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgbus184nth0e"
-path="res://.godot/imported/石磚.png-73d4cf5e06fdcea37b3489ef573bc0ac.ctex"
+uid="uid://bd4wbwsiu2mp8"
+path="res://.godot/imported/hamlet_background_3.png-75d33da18fca0e8f80b54c7c578cbfae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/石磚.png"
-dest_files=["res://.godot/imported/石磚.png-73d4cf5e06fdcea37b3489ef573bc0ac.ctex"]
+source_file="res://material/hamlet_background_3.png"
+dest_files=["res://.godot/imported/hamlet_background_3.png-75d33da18fca0e8f80b54c7c578cbfae.ctex"]
 
 [params]
 

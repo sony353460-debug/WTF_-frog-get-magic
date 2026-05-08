@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://snjj1wa3hiur"
-path="res://.godot/imported/草地.png-92d36e3d17737d44218b856a758807d6.ctex"
+uid="uid://bbnvni1gyseoy"
+path="res://.godot/imported/ground1.png-522a6293b5408918c9c5b3a94fa8b4a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/草地.png"
-dest_files=["res://.godot/imported/草地.png-92d36e3d17737d44218b856a758807d6.ctex"]
+source_file="res://material/ground/ground1.png"
+dest_files=["res://.godot/imported/ground1.png-522a6293b5408918c9c5b3a94fa8b4a3.ctex"]
 
 [params]
 

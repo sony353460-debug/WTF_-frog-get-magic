@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ijsp1dcfvuiu"
-path="res://.godot/imported/田雞.png-9d06903b77e8a5e05d09a2cf10453e54.ctex"
+uid="uid://bgbus184nth0e"
+path="res://.godot/imported/石磚.png-422bd4f17e948e9f2f8a44e239c28e18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Charcter_img/田雞.png"
-dest_files=["res://.godot/imported/田雞.png-9d06903b77e8a5e05d09a2cf10453e54.ctex"]
+source_file="res://material/ground/石磚.png"
+dest_files=["res://.godot/imported/石磚.png-422bd4f17e948e9f2f8a44e239c28e18.ctex"]
 
 [params]
 

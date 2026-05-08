@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdma54she4yau"
-path="res://.godot/imported/小草地.png-51c365a413db741432546675bb097359.ctex"
+uid="uid://ckgjobjs7yiqn"
+path="res://.godot/imported/鐘乳石地.png-abd17642e20b10cd107fef8f60098eda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/小草地.png"
-dest_files=["res://.godot/imported/小草地.png-51c365a413db741432546675bb097359.ctex"]
+source_file="res://material/ground/鐘乳石地.png"
+dest_files=["res://.godot/imported/鐘乳石地.png-abd17642e20b10cd107fef8f60098eda.ctex"]
 
 [params]
 

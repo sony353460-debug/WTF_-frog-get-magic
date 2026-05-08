@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uufk264m0ti5"
-path="res://.godot/imported/背景.png-307f4075e226b58a8348e3abfc884d28.ctex"
+uid="uid://rdgg3oxxtcyp"
+path="res://.godot/imported/苔癬.png-9ac1c997183ac8063407330678a5a262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/背景.png"
-dest_files=["res://.godot/imported/背景.png-307f4075e226b58a8348e3abfc884d28.ctex"]
+source_file="res://material/ground/苔癬.png"
+dest_files=["res://.godot/imported/苔癬.png-9ac1c997183ac8063407330678a5a262.ctex"]
 
 [params]
 

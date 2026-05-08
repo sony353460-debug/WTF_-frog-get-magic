@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o5mpt2xf4nm0"
-path="res://.godot/imported/沙地.png-5fb038f5a809266ca826de02a61166a3.ctex"
+uid="uid://cjtu47r5eurkt"
+path="res://.godot/imported/首頁.png-de92a16f5561f86a5a94d45db7246e32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/沙地.png"
-dest_files=["res://.godot/imported/沙地.png-5fb038f5a809266ca826de02a61166a3.ctex"]
+source_file="res://material/background/首頁.png"
+dest_files=["res://.godot/imported/首頁.png-de92a16f5561f86a5a94d45db7246e32.ctex"]
 
 [params]
 

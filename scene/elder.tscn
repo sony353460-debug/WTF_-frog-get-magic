@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bq0trpqh68rfh"]
 
 [ext_resource type="Script" uid="uid://cs0k6g1bcokby" path="res://script/elder.gd" id="1_3ok0b"]
-[ext_resource type="Texture2D" uid="uid://dvvr3tqodciim" path="res://Charcter_img/青蛙長老.png" id="1_e25ti"]
+[ext_resource type="Texture2D" uid="uid://dvvr3tqodciim" path="res://material/Charcter_img/青蛙長老.png" id="1_e25ti"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ok0b"]
 radius = 46.872166
