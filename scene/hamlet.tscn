@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://bbnvni1gyseoy" path="res://material/ground/ground1.png" id="5_7qh1y"]
 [ext_resource type="PackedScene" uid="uid://bq0trpqh68rfh" path="res://scene/elder.tscn" id="5_1512q"]
 [ext_resource type="Script" uid="uid://bkhg8qqbkf65c" path="res://script/character_body_2d.gd" id="6_r0j3d"]
-[ext_resource type="Texture2D" uid="uid://dbb4e46nmc416" path="res://material/Charcter_img/frogidle-Photoroom.png" id="9_qofsl"]
 [ext_resource type="Texture2D" uid="uid://b8aotqre1chen" path="res://material/Charcter_img/frogrun-Photoroom.png" id="10_48rbw"]
 [ext_resource type="Texture2D" uid="uid://b3kqehna82iy6" path="res://material/ground/ground2.png" id="11_1512q"]
 [ext_resource type="Texture2D" uid="uid://6bu0m28oad6y" path="res://material/ground/ground3.png" id="12_r0j3d"]
@@ -82,41 +81,9 @@ font_color = Color(0, 0, 0, 1)
 [sub_resource type="CircleShape2D" id="CircleShape2D_ic0hd"]
 radius = 92.65527
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hnsx0"]
-atlas = ExtResource("9_qofsl")
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0j3d"]
+atlas = ExtResource("10_48rbw")
 region = Rect2(0, 0, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vb5y6"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(341, 0, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_twink"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(682, 0, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yhab7"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(0, 341, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hvoqh"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(341, 341, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vq5v8"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(682, 341, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mtt55"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(0, 682, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nbksp"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(341, 682, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ht43p"]
-atlas = ExtResource("9_qofsl")
-region = Rect2(682, 682, 341, 341)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mr0p8"]
 atlas = ExtResource("10_48rbw")
@@ -150,31 +117,7 @@ region = Rect2(0, 682, 341, 341)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hnsx0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vb5y6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_twink")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yhab7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hvoqh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vq5v8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mtt55")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nbksp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ht43p")
+"texture": SubResource("AtlasTexture_r0j3d")
 }],
 "loop": true,
 "name": &"Idile",
