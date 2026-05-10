@@ -1,31 +1,116 @@
-[gd_scene format=3 uid="uid://tvpbiq4qper"]
+[gd_scene format=3 uid="uid://bg3vs5c2sjdg1"]
 
-[ext_resource type="Script" uid="uid://c773egj7k0pqu" path="res://script/shop.gd" id="1_iuafe"]
+[ext_resource type="Texture2D" uid="uid://bww3klwjt6w40" path="res://material/background/shop_gui_background.png" id="1_4p3p6"]
+[ext_resource type="Texture2D" uid="uid://bhbx61mmbh5g2" path="res://material/background/shop_gui_button.png" id="2_phbgv"]
+[ext_resource type="Script" uid="uid://ddsublwwum1i5" path="res://script/shop.gd" id="2_uyq3k"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hmeg"]
-size = Vector2(210, 212)
+[node name="ShopGuiBackground" type="Sprite2D" unique_id=939426232]
+position = Vector2(960, 496)
+scale = Vector2(0.91851854, 0.9185185)
+texture = ExtResource("1_4p3p6")
+script = ExtResource("2_uyq3k")
 
-[node name="shop" type="Area2D" unique_id=54979174]
-script = ExtResource("1_iuafe")
+[node name="Label" type="Label" parent="." unique_id=681199232]
+offset_left = -425.0
+offset_top = -187.0
+offset_right = -281.0
+offset_bottom = -142.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/font_size = 32
+text = "10000"
+horizontal_alignment = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1913695379]
-shape = SubResource("RectangleShape2D_5hmeg")
+[node name="goods_button1" type="Button" parent="." unique_id=1673183318]
+offset_left = -290.0
+offset_top = 97.0
+offset_right = -112.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.58456355, 0.58456355, 0.58456355, 1)
+theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+text = "莓果"
+icon = ExtResource("2_phbgv")
+flat = true
+icon_alignment = 1
 
-[node name="CheckButton" type="CheckButton" parent="." unique_id=884701945]
-visible = false
-offset_left = -14.0
-offset_top = 30.0
-offset_right = 30.0
-offset_bottom = 54.0
-metadata/_edit_use_anchors_ = true
+[node name="goods_button2" type="Button" parent="." unique_id=1940087654]
+offset_left = -2.0
+offset_top = 94.0
+offset_right = 176.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+text = "樹皮"
+icon = ExtResource("2_phbgv")
+flat = true
+icon_alignment = 1
 
-[node name="CanvasLayer" type="CanvasLayer" parent="CheckButton" unique_id=225858186]
+[node name="goods_button3" type="Button" parent="." unique_id=2008177073]
+offset_left = 286.0
+offset_top = 94.0
+offset_right = 464.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+text = "飲料"
+icon = ExtResource("2_phbgv")
+flat = true
+icon_alignment = 1
 
-[node name="Panel" type="Panel" parent="CheckButton/CanvasLayer" unique_id=958643805]
-offset_left = -103.0
-offset_top = -105.0
-offset_right = 102.0
-offset_bottom = -53.0
+[node name="goods_button4" type="Button" parent="." unique_id=244719382]
+offset_left = -291.0
+offset_top = 394.0
+offset_right = -113.0
+offset_bottom = 443.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+text = "藥水"
+icon = ExtResource("2_phbgv")
+flat = true
+icon_alignment = 1
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[node name="goods_button5" type="Button" parent="." unique_id=1287855406]
+offset_left = -2.0
+offset_top = 397.0
+offset_right = 176.0
+offset_bottom = 446.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+text = "蚊子"
+icon = ExtResource("2_phbgv")
+flat = true
+icon_alignment = 1
+
+[node name="goods_button6" type="Button" parent="." unique_id=1509884663]
+offset_left = 286.0
+offset_top = 397.0
+offset_right = 464.0
+offset_bottom = 446.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+text = "蝴蝶"
+icon = ExtResource("2_phbgv")
+flat = true
+icon_alignment = 1
+
+[node name="exit_button" type="Button" parent="." unique_id=1849713717]
+offset_left = 546.0
+offset_top = -201.0
+offset_right = 615.0
+offset_bottom = -124.0
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
+theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 50
+text = "x"
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]

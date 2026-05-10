@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvvr3tqodciim"
-path="res://.godot/imported/青蛙長老.png-b7476d9dfe13aebf73b032a180783196.ctex"
+uid="uid://bhbx61mmbh5g2"
+path="res://.godot/imported/shop_gui_button.png-ae198449a7b5893f1ee5650dd53bbbaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Charcter_img/青蛙長老.png"
-dest_files=["res://.godot/imported/青蛙長老.png-b7476d9dfe13aebf73b032a180783196.ctex"]
+source_file="res://material/background/shop_gui_button.png"
+dest_files=["res://.godot/imported/shop_gui_button.png-ae198449a7b5893f1ee5650dd53bbbaf.ctex"]
 
 [params]
 

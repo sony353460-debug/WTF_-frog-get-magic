@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ijsp1dcfvuiu"
-path="res://.godot/imported/田雞.png-9d06903b77e8a5e05d09a2cf10453e54.ctex"
+uid="uid://cjtu47r5eurkt"
+path="res://.godot/imported/首頁.png-de92a16f5561f86a5a94d45db7246e32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Charcter_img/田雞.png"
-dest_files=["res://.godot/imported/田雞.png-9d06903b77e8a5e05d09a2cf10453e54.ctex"]
+source_file="res://material/background/首頁.png"
+dest_files=["res://.godot/imported/首頁.png-de92a16f5561f86a5a94d45db7246e32.ctex"]
 
 [params]
 

@@ -1,9 +1,13 @@
 extends CharacterBody2D
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+#每秒執行好幾次updateanimaed()
+func _process(delta):
+	updateanimaed()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +27,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+#動畫帧
+func updateanimaed():
+	if velocity.x!=0:
+		animated_sprite_2d.flip_h=velocity.x<0
+	
+	if is_on_floor():
+		if abs(velocity.x)>=0.1:
+			animated_sprite_2d.play("Run")
+		else:
+			animated_sprite_2d.play("Idile")

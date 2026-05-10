@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckgjobjs7yiqn"
-path="res://.godot/imported/鐘乳石地.png-9377b4dce0abc48ce5a92c35c71d60f2.ctex"
+uid="uid://cktyqqhf10xpg"
+path="res://.godot/imported/hamlet_background_1.png-910ad6a064d5d507c3af7a680c7f2cd8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/鐘乳石地.png"
-dest_files=["res://.godot/imported/鐘乳石地.png-9377b4dce0abc48ce5a92c35c71d60f2.ctex"]
+source_file="res://material/background/hamlet_background_1.png"
+dest_files=["res://.godot/imported/hamlet_background_1.png-910ad6a064d5d507c3af7a680c7f2cd8.ctex"]
 
 [params]
 

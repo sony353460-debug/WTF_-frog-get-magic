@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://srjgba7blr56"
-path="res://.godot/imported/海.png-340a04ace6703269d2088ae50b201db0.ctex"
+uid="uid://b8aotqre1chen"
+path="res://.godot/imported/frogrun-Photoroom.png-1916e528c16a697c446483e0b231a716.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/海.png"
-dest_files=["res://.godot/imported/海.png-340a04ace6703269d2088ae50b201db0.ctex"]
+source_file="res://material/Charcter_img/frogrun-Photoroom.png"
+dest_files=["res://.godot/imported/frogrun-Photoroom.png-1916e528c16a697c446483e0b231a716.ctex"]
 
 [params]
 

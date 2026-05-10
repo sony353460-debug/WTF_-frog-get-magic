@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4n50li6bgu45"
-path="res://.godot/imported/蛙得法_動作圖片.png-59acc6dbe37a7ea6886309427f944a0f.ctex"
+uid="uid://bww3klwjt6w40"
+path="res://.godot/imported/shop_gui_background.png-0d937c7529bee08b8b19ba6753f899f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Charcter_img/蛙得法_動作圖片.png"
-dest_files=["res://.godot/imported/蛙得法_動作圖片.png-59acc6dbe37a7ea6886309427f944a0f.ctex"]
+source_file="res://material/background/shop_gui_background.png"
+dest_files=["res://.godot/imported/shop_gui_background.png-0d937c7529bee08b8b19ba6753f899f0.ctex"]
 
 [params]
 

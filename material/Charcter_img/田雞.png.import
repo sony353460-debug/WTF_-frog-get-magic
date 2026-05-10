@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uufk264m0ti5"
-path="res://.godot/imported/背景.png-307f4075e226b58a8348e3abfc884d28.ctex"
+uid="uid://ijsp1dcfvuiu"
+path="res://.godot/imported/田雞.png-b51788e807ae7ec05bbc7db183725e26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/背景.png"
-dest_files=["res://.godot/imported/背景.png-307f4075e226b58a8348e3abfc884d28.ctex"]
+source_file="res://material/Charcter_img/田雞.png"
+dest_files=["res://.godot/imported/田雞.png-b51788e807ae7ec05bbc7db183725e26.ctex"]
 
 [params]
 
@@ -36,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=1
+process/size_limit=0
 detect_3d/compress_to=1

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdrkiq7wr04nj"
-path="res://.godot/imported/小青蛙_休息.png-ec8dfb4d313361f63225010c554b850a.ctex"
+uid="uid://snjj1wa3hiur"
+path="res://.godot/imported/草地.png-f5d664b46bcf7d52d32a4dcb5e158540.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Charcter_img/小青蛙_休息.png"
-dest_files=["res://.godot/imported/小青蛙_休息.png-ec8dfb4d313361f63225010c554b850a.ctex"]
+source_file="res://material/ground/草地.png"
+dest_files=["res://.godot/imported/草地.png-f5d664b46bcf7d52d32a4dcb5e158540.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgbus184nth0e"
-path="res://.godot/imported/石磚.png-73d4cf5e06fdcea37b3489ef573bc0ac.ctex"
+uid="uid://rdgg3oxxtcyp"
+path="res://.godot/imported/苔癬.png-9ac1c997183ac8063407330678a5a262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ground/石磚.png"
-dest_files=["res://.godot/imported/石磚.png-73d4cf5e06fdcea37b3489ef573bc0ac.ctex"]
+source_file="res://material/ground/苔癬.png"
+dest_files=["res://.godot/imported/苔癬.png-9ac1c997183ac8063407330678a5a262.ctex"]
 
 [params]
 
