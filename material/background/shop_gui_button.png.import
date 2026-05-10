@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd4wbwsiu2mp8"
-path="res://.godot/imported/hamlet_background_3.png-75d33da18fca0e8f80b54c7c578cbfae.ctex"
+uid="uid://bhbx61mmbh5g2"
+path="res://.godot/imported/shop_gui_button.png-ae198449a7b5893f1ee5650dd53bbbaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/hamlet_background_3.png"
-dest_files=["res://.godot/imported/hamlet_background_3.png-75d33da18fca0e8f80b54c7c578cbfae.ctex"]
+source_file="res://material/background/shop_gui_button.png"
+dest_files=["res://.godot/imported/shop_gui_button.png-ae198449a7b5893f1ee5650dd53bbbaf.ctex"]
 
 [params]
 

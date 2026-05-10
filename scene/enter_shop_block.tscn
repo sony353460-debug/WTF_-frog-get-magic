@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://tvpbiq4qper"]
+
+[ext_resource type="Script" uid="uid://c773egj7k0pqu" path="res://script/enter_shop_block.gd" id="1_iuafe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hmeg"]
+size = Vector2(466, 432)
+
+[node name="enter_shop_block" type="Area2D" unique_id=54979174]
+script = ExtResource("1_iuafe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1913695379]
+shape = SubResource("RectangleShape2D_5hmeg")
+
+[node name="Button" type="Button" parent="." unique_id=1771437099]
+offset_right = 129.0
+offset_bottom = 51.0
+text = "進入商店"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
