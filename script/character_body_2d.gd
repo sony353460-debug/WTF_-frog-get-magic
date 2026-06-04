@@ -4,18 +4,24 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-
+const MAX_JUMP_VELOCITY=-800.0
+var can_move=true
 #每秒執行好幾次updateanimaed()
 func _process(delta):
 	updateanimaed()
 
 func _physics_process(delta: float) -> void:
+	if can_move==false:
+		animated_sprite_2d.play("Idile")
+		return
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = MAX_JUMP_VELOCITY
+	if Input.is_action_just_released("ui_accept") and velocity.y<JUMP_VELOCITY:
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
