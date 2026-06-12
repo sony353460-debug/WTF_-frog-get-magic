@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dmw3ydypdg5r4"]
+
+[ext_resource type="Script" uid="uid://rqwxhdrt78md" path="res://script/board.gd" id="1_32fhn"]
+[ext_resource type="Texture2D" uid="uid://bl738rjk4cov3" path="res://material/object/forest/指示牌.png" id="1_b3264"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_32fhn"]
+size = Vector2(308, 370)
+
+[node name="Node2D" type="Area2D" unique_id=291247710]
+script = ExtResource("1_32fhn")
+
+[node name="指示牌" type="Sprite2D" parent="." unique_id=363972935]
+position = Vector2(154, 187)
+texture = ExtResource("1_b3264")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=436360084]
+position = Vector2(153, 185)
+shape = SubResource("RectangleShape2D_32fhn")
+
+[node name="Button" type="Button" parent="." unique_id=1281454785]
+offset_left = 185.0
+offset_top = 197.0
+offset_right = 318.0
+offset_bottom = 244.0
+text = "進入雨林"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

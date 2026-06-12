@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://duic6ajgrec4y"]
+
+[ext_resource type="Script" uid="uid://b0xy2xt0u8mq2" path="res://enter_boiler_block.gd" id="1_6d7tx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36oyh"]
+size = Vector2(374.5, 314.5)
+
+[node name="Node2D" type="Area2D" unique_id=1076448237]
+script = ExtResource("1_6d7tx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500016352]
+position = Vector2(187.75, 157.75)
+shape = SubResource("RectangleShape2D_36oyh")
+
+[node name="Button" type="Button" parent="." unique_id=502384820]
+offset_left = 230.0
+offset_top = 113.0
+offset_right = 369.0
+offset_bottom = 161.0
+text = "進入合成"

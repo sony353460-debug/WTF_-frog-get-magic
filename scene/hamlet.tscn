@@ -1,21 +1,20 @@
 [gd_scene format=4 uid="uid://cxsbsjk3o84ea"]
 
-[ext_resource type="Texture2D" uid="uid://cktyqqhf10xpg" path="res://material/background/hamlet_background_1.png" id="1_ext1m"]
-[ext_resource type="Texture2D" uid="uid://bxt3olra5v4wx" path="res://material/background/hamlet_background_2.png" id="2_7qh1y"]
+[ext_resource type="Texture2D" uid="uid://bj52874vdht4l" path="res://material/background/村長家-01.png" id="1_qofsl"]
+[ext_resource type="Texture2D" uid="uid://cr4kcw2eeh7e7" path="res://material/background/村長家-02.png" id="2_48rbw"]
 [ext_resource type="Texture2D" uid="uid://cdma54she4yau" path="res://material/ground/小草地.png" id="2_ext1m"]
 [ext_resource type="Script" uid="uid://tpnw2og8g83u" path="res://script/tile_map_layer.gd" id="3_7qh1y"]
-[ext_resource type="Texture2D" uid="uid://6ugw3xj2l71" path="res://material/background/hamlet_background_3.png" id="3_eokgb"]
+[ext_resource type="Texture2D" uid="uid://ts8mcs1ggudf" path="res://material/background/村長家-03.png" id="3_hnsx0"]
 [ext_resource type="PackedScene" uid="uid://tvpbiq4qper" path="res://scene/enter_shop_block.tscn" id="4_eokgb"]
 [ext_resource type="Texture2D" uid="uid://bbnvni1gyseoy" path="res://material/ground/ground1.png" id="5_7qh1y"]
 [ext_resource type="PackedScene" uid="uid://bq0trpqh68rfh" path="res://scene/elder.tscn" id="5_1512q"]
-[ext_resource type="Script" uid="uid://bkhg8qqbkf65c" path="res://script/character_body_2d.gd" id="6_r0j3d"]
 [ext_resource type="PackedScene" uid="uid://bg3vs5c2sjdg1" path="res://scene/shop.tscn" id="7_48rbw"]
-[ext_resource type="Texture2D" uid="uid://c4n50li6bgu45" path="res://material/Charcter_img/蛙得法_動作圖片.png" id="7_qofsl"]
-[ext_resource type="Texture2D" uid="uid://b8aotqre1chen" path="res://material/Charcter_img/frogrun-Photoroom.png" id="10_48rbw"]
+[ext_resource type="PackedScene" uid="uid://dmw3ydypdg5r4" path="res://scene/board.tscn" id="9_48rbw"]
+[ext_resource type="PackedScene" uid="uid://v8aw0yt1bxbs" path="res://scene/player.tscn" id="10_qofsl"]
 [ext_resource type="Texture2D" uid="uid://b3kqehna82iy6" path="res://material/ground/ground2.png" id="11_1512q"]
 [ext_resource type="Texture2D" uid="uid://6bu0m28oad6y" path="res://material/ground/ground3.png" id="12_r0j3d"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g5mv0"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qofsl"]
 texture = ExtResource("2_ext1m")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -52,7 +51,7 @@ texture = ExtResource("2_ext1m")
 
 [sub_resource type="TileSet" id="TileSet_ic0hd"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_g5mv0")
+sources/0 = SubResource("TileSetAtlasSource_qofsl")
 
 [sub_resource type="FontFile" id="FontFile_pfad8"]
 cache/0/variation_coordinates = {}
@@ -80,93 +79,21 @@ font = SubResource("FontFile_pfad8")
 font_size = 32
 font_color = Color(0, 0, 0, 1)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ic0hd"]
-radius = 92.65527
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r0j3d"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(0, 0, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mr0p8"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(0, 0, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_agw8r"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(341, 0, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_610f3"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(682, 0, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_28i3j"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(0, 341, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nr0k8"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(341, 341, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qclax"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(682, 341, 341, 341)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tdygk"]
-atlas = ExtResource("10_48rbw")
-region = Rect2(0, 682, 341, 341)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_11d3u"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r0j3d")
-}],
-"loop": true,
-"name": &"Idile",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mr0p8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_agw8r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_610f3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_28i3j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nr0k8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qclax")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tdygk")
-}],
-"loop": true,
-"name": &"Run",
-"speed": 10.0
-}]
-
 [node name="Node2D" type="Node2D" unique_id=685412838]
 
 [node name="HamletBackground1" type="Sprite2D" parent="." unique_id=2022941289]
 position = Vector2(959, 541)
-texture = ExtResource("1_ext1m")
+texture = ExtResource("1_qofsl")
 metadata/_edit_lock_ = true
 
 [node name="HamletBackground2" type="Sprite2D" parent="." unique_id=1260427482]
 position = Vector2(2878, 541)
-texture = ExtResource("2_7qh1y")
+texture = ExtResource("2_48rbw")
 metadata/_edit_lock_ = true
 
 [node name="HamletBackground3" type="Sprite2D" parent="." unique_id=1147325581]
 position = Vector2(4797, 541)
-texture = ExtResource("3_eokgb")
+texture = ExtResource("3_hnsx0")
 metadata/_edit_lock_ = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1071163303]
@@ -184,24 +111,21 @@ offset_right = 228.0
 offset_bottom = -88.0
 label_settings = SubResource("LabelSettings_pfad8")
 
-[node name="player" type="CharacterBody2D" parent="." unique_id=1693867844]
-position = Vector2(912, 860)
-script = ExtResource("6_r0j3d")
-metadata/_edit_group_ = true
+[node name="Node2D" parent="." unique_id=291247710 instance=ExtResource("9_48rbw")]
+position = Vector2(5270, 590)
 
-[node name="Sprite2D" type="Sprite2D" parent="player" unique_id=88454681]
+[node name="enter_shop_block" parent="." unique_id=54979174 instance=ExtResource("4_eokgb")]
+position = Vector2(3707, 731)
+metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=1643545407]
-shape = SubResource("CircleShape2D_ic0hd")
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1244732447]
 
-[node name="Camera2D" type="Camera2D" parent="player" unique_id=15253068]
-position = Vector2(0, -273)
-zoom = Vector2(1.1, 1.1)
-limit_enabled = false
+[node name="shop" parent="CanvasLayer" unique_id=578752243 instance=ExtResource("7_48rbw")]
+position = Vector2(663, -392.00003)
+scale = Vector2(0.65462965, 0.65462965)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1544084112]
-sprite_frames = SubResource("SpriteFrames_11d3u")
-animation = &"Idile"
+[node name="player" parent="." unique_id=971503981 instance=ExtResource("10_qofsl")]
+position = Vector2(951, 856)
 
 [node name="Ground" type="Sprite2D" parent="." unique_id=1599179802]
 position = Vector2(959, 541)
@@ -217,16 +141,6 @@ metadata/_edit_lock_ = true
 position = Vector2(4798, 541)
 texture = ExtResource("12_r0j3d")
 metadata/_edit_lock_ = true
-
-[node name="enter_shop_block" parent="." unique_id=54979174 instance=ExtResource("4_eokgb")]
-position = Vector2(3707, 731)
-metadata/_edit_lock_ = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1244732447]
-
-[node name="shop" parent="CanvasLayer" unique_id=578752243 instance=ExtResource("7_48rbw")]
-position = Vector2(663, -392.00003)
-scale = Vector2(0.65462965, 0.65462965)
 
 [connection signal="body_entered" from="elder" to="elder" method="_on_body_entered"]
 [connection signal="body_exited" from="elder" to="elder" method="_on_body_exited"]
