@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://v8aw0yt1bxbs"]
 
 [ext_resource type="Script" uid="uid://bkhg8qqbkf65c" path="res://script/character_body_2d.gd" id="1_hjaqi"]
+[ext_resource type="Script" uid="uid://dibswkaq2fcc5" path="res://scene/level_bounds.gd" id="2_ct4mp"]
 [ext_resource type="Texture2D" uid="uid://b8aotqre1chen" path="res://material/Charcter_img/frogrun-Photoroom.png" id="2_fvtld"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ic0hd"]
@@ -75,20 +76,23 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="player" type="CharacterBody2D" unique_id=971503981]
+[node name="player" type="CharacterBody2D" unique_id=272499636]
+collision_layer = 2
 script = ExtResource("1_hjaqi")
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2130306782]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1494473287]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=783839945]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1290411308]
 shape = SubResource("CircleShape2D_ic0hd")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=611217010]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1811843661]
 position = Vector2(0, -273)
 zoom = Vector2(1.1, 1.1)
-limit_enabled = false
+limit_top = 0
+limit_smoothed = true
+script = ExtResource("2_ct4mp")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1460264039]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1981972883]
 sprite_frames = SubResource("SpriteFrames_11d3u")
 animation = &"Idile"

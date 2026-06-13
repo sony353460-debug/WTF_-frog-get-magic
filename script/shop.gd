@@ -1,5 +1,6 @@
 extends Sprite2D
 
+@onready var player: CharacterBody2D = $"../../player"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,4 +13,5 @@ func _process(delta: float) -> void:
 
 
 func _on_exit_button_pressed() -> void:
+	player.can_move=true
 	queue_free()
