@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://v8aw0yt1bxbs"]
 
 [ext_resource type="Script" uid="uid://bkhg8qqbkf65c" path="res://script/character_body_2d.gd" id="1_hjaqi"]
+[ext_resource type="Script" uid="uid://dibswkaq2fcc5" path="res://scene/level_bounds.gd" id="2_ct4mp"]
 [ext_resource type="Texture2D" uid="uid://b8aotqre1chen" path="res://material/Charcter_img/frogrun-Photoroom.png" id="2_fvtld"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ic0hd"]
@@ -87,7 +88,9 @@ shape = SubResource("CircleShape2D_ic0hd")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1811843661]
 position = Vector2(0, -273)
-limit_enabled = false
+limit_top = 0
+limit_smoothed = true
+script = ExtResource("2_ct4mp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1981972883]
 sprite_frames = SubResource("SpriteFrames_11d3u")

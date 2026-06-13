@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name PlayertControllor
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
@@ -6,6 +7,18 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const MAX_JUMP_VELOCITY=-800.0
 var can_move=true
+
+var currentHealth:
+	set(new_value):
+		currentHealth=new_value
+		emit_signal("playerHealthUpdated",currentHealth,MAX_HEALTH)
+const  MAX_HEALTH=100
+
+signal playerHealthUpdated(newValue,maxValue)
+
+func _ready():
+	currentHealth=MAX_HEALTH
+
 #每秒執行好幾次updateanimaed()
 func _process(delta):
 	updateanimaed()
@@ -31,6 +44,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+	#射擊
+	if Input.is_action_just_pressed("Shoot"):
+		TryToShoot()
 
 	move_and_slide()
 #動畫帧
@@ -43,3 +59,35 @@ func updateanimaed():
 			animated_sprite_2d.play("Run")
 		else:
 			animated_sprite_2d.play("Idile")
+			
+var is_Shooting = false
+const SHOOT_DURATION = 0.249
+func TryToShoot():
+	if is_Shooting:
+		return # 如果正在射擊中，則不重複觸發
+	is_Shooting = true
+	Shoot()          # 呼叫生成子彈 
+	
+	# 等待冷卻時間結束後，重設射擊狀態
+	await get_tree().create_timer(SHOOT_DURATION).timeout
+	is_Shooting = false
+
+func Shoot():
+	var bulletToSpawn = preload("res://bullet.tscn")
+	var vfxInstance = bulletToSpawn.instantiate()
+	get_tree().get_root().get_node("Node2D").add_child(vfxInstance)
+	# 在發射點的全局座標生成子彈
+	vfxInstance.global_position = global_position
+	# 根據玩家目前的翻轉狀態（面向）決定子彈飛行方向
+	if animated_sprite_2d.flip_h:
+		vfxInstance.direction = -1  # 向左
+	else:
+		vfxInstance.direction = 1   # 向右
+
+func ApplyDamage(damage:int):
+
+	currentHealth-=damage
+
+	if currentHealth<=0:
+		currentHealth=0
+		

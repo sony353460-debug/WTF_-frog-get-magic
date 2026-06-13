@@ -4,8 +4,8 @@ extends Area2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 
 
-const START_FRAME=10
-const END_FRAME=13
+const START_FRAME=7
+const END_FRAME=9
 const DAMAGE=30
 
 func _process(delta):
@@ -16,3 +16,7 @@ func _process(delta):
 			return
 	monitoring=false
 	collision_shape_2d.visible=false
+func _on_body_entered(body):
+	var player=body as PlayertControllor
+	if player:
+		player.ApplyDamage(DAMAGE)
