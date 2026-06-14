@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://cxsbsjk3o84ea"]
 
-[ext_resource type="Texture2D" uid="uid://cktyqqhf10xpg" path="res://material/background/hamlet_background_1.png" id="1_ext1m"]
-[ext_resource type="Texture2D" uid="uid://bxt3olra5v4wx" path="res://material/background/hamlet_background_2.png" id="2_7qh1y"]
+[ext_resource type="Texture2D" uid="uid://bj52874vdht4l" path="res://material/background/村長家-01.png" id="1_48rbw"]
 [ext_resource type="Texture2D" uid="uid://cdma54she4yau" path="res://material/ground/小草地.png" id="2_ext1m"]
+[ext_resource type="Texture2D" uid="uid://cr4kcw2eeh7e7" path="res://material/background/村長家-02.png" id="2_hnsx0"]
 [ext_resource type="Script" uid="uid://tpnw2og8g83u" path="res://script/tile_map_layer.gd" id="3_7qh1y"]
-[ext_resource type="Texture2D" uid="uid://6ugw3xj2l71" path="res://material/background/hamlet_background_3.png" id="3_eokgb"]
+[ext_resource type="Texture2D" uid="uid://ts8mcs1ggudf" path="res://material/background/村長家-03.png" id="3_vb5y6"]
 [ext_resource type="PackedScene" uid="uid://tvpbiq4qper" path="res://scene/enter_shop_block.tscn" id="4_eokgb"]
 [ext_resource type="Texture2D" uid="uid://bbnvni1gyseoy" path="res://material/ground/ground1.png" id="5_7qh1y"]
 [ext_resource type="PackedScene" uid="uid://bq0trpqh68rfh" path="res://scene/elder.tscn" id="5_1512q"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://b3kqehna82iy6" path="res://material/ground/ground2.png" id="11_1512q"]
 [ext_resource type="PackedScene" uid="uid://v8aw0yt1bxbs" path="res://scene/player.tscn" id="12_qofsl"]
 [ext_resource type="Texture2D" uid="uid://6bu0m28oad6y" path="res://material/ground/ground3.png" id="12_r0j3d"]
-[ext_resource type="PackedScene" uid="uid://cfp0kf6extwxb" path="res://scene/enemy.tscn" id="13_qofsl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g5mv0"]
 texture = ExtResource("2_ext1m")
@@ -99,17 +98,17 @@ corner_radius_bottom_left = 20
 
 [node name="HamletBackground1" type="Sprite2D" parent="." unique_id=2022941289]
 position = Vector2(959, 541)
-texture = ExtResource("1_ext1m")
+texture = ExtResource("1_48rbw")
 metadata/_edit_lock_ = true
 
 [node name="HamletBackground2" type="Sprite2D" parent="." unique_id=1260427482]
 position = Vector2(2878, 541)
-texture = ExtResource("2_7qh1y")
+texture = ExtResource("2_hnsx0")
 metadata/_edit_lock_ = true
 
 [node name="HamletBackground3" type="Sprite2D" parent="." unique_id=1147325581]
 position = Vector2(4797, 541)
-texture = ExtResource("3_eokgb")
+texture = ExtResource("3_vb5y6")
 metadata/_edit_lock_ = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1071163303]
@@ -130,6 +129,7 @@ label_settings = SubResource("LabelSettings_pfad8")
 
 [node name="Node2D" parent="." unique_id=291247710 instance=ExtResource("9_48rbw")]
 position = Vector2(5270, 590)
+collision_mask = 2
 
 [node name="Ground" type="Sprite2D" parent="." unique_id=1599179802]
 position = Vector2(959, 541)
@@ -182,10 +182,6 @@ metadata/_edit_use_anchors_ = true
 [node name="player" parent="." unique_id=272499636 instance=ExtResource("12_qofsl")]
 z_index = 1
 position = Vector2(971, 814)
-
-[node name="Enemy" parent="." unique_id=97723074 instance=ExtResource("13_qofsl")]
-position = Vector2(1262, 940)
-scale = Vector2(3, 3)
 
 [connection signal="body_entered" from="elder" to="elder" method="_on_body_entered"]
 [connection signal="body_exited" from="elder" to="elder" method="_on_body_exited"]

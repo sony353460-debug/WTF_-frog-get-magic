@@ -4,8 +4,8 @@ class_name PlayertControllor
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-const MAX_JUMP_VELOCITY=-800.0
+const JUMP_VELOCITY = -500.0
+const MAX_JUMP_VELOCITY=-1500.0
 var can_move=true
 
 var currentHealth:
@@ -73,7 +73,7 @@ func TryToShoot():
 	is_Shooting = false
 
 func Shoot():
-	var bulletToSpawn = preload("res://bullet.tscn")
+	var bulletToSpawn = preload("res://scene/bullet.tscn")
 	var vfxInstance = bulletToSpawn.instantiate()
 	get_tree().get_root().get_node("Node2D").add_child(vfxInstance)
 	# 在發射點的全局座標生成子彈
