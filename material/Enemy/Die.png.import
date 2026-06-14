@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtssmdgcv342b"
-path="res://.godot/imported/frame_001-removebg-preview.png-9079f945dc0d7fd4dc94748f0c5da334.ctex"
+uid="uid://s71pi4yrfymh"
+path="res://.godot/imported/Die.png-abfa69b7ce59c23cf14b1b95117ce303.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemy/cow_die/frame_001-removebg-preview.png"
-dest_files=["res://.godot/imported/frame_001-removebg-preview.png-9079f945dc0d7fd4dc94748f0c5da334.ctex"]
+source_file="res://material/Enemy/Die.png"
+dest_files=["res://.godot/imported/Die.png-abfa69b7ce59c23cf14b1b95117ce303.ctex"]
 
 [params]
 

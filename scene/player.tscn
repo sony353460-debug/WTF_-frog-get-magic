@@ -91,6 +91,7 @@ position = Vector2(0, -273)
 zoom = Vector2(1.1, 1.1)
 limit_top = 0
 limit_smoothed = true
+position_smoothing_enabled = true
 script = ExtResource("2_ct4mp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1981972883]

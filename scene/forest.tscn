@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://v8aw0yt1bxbs" path="res://scene/player.tscn" id="14_ja8kk"]
 [ext_resource type="Texture2D" uid="uid://cdma54she4yau" path="res://material/ground/小草地.png" id="15_0xhum"]
 [ext_resource type="Script" uid="uid://tpnw2og8g83u" path="res://script/tile_map_layer.gd" id="16_p7yhu"]
+[ext_resource type="Script" uid="uid://tkjy21jlp7dp" path="res://script/UI_manager.gd" id="17_p7yhu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cwbpd"]
 texture = ExtResource("15_0xhum")
@@ -55,6 +56,20 @@ texture = ExtResource("15_0xhum")
 [sub_resource type="TileSet" id="TileSet_ysu3w"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_cwbpd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwbpd"]
+border_color = Color(0.77353424, 0.17849588, 0.25602892, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ysu3w"]
+bg_color = Color(0.77254903, 0.18039216, 0.25490198, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="Node2D" type="Node2D" unique_id=462692405]
 metadata/_edit_lock_ = true
@@ -136,3 +151,27 @@ texture = ExtResource("11_xw4on")
 [node name="Ground5" type="Sprite2D" parent="." unique_id=317034162]
 position = Vector2(8639, 1621)
 texture = ExtResource("12_bqdkd")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=94473668]
+layer = 0
+script = ExtResource("17_p7yhu")
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=2115725993]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="health_bar" type="ProgressBar" parent="CanvasLayer/Control" unique_id=1333206056]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 450.0
+offset_bottom = 90.0
+theme_override_styles/background = SubResource("StyleBoxFlat_cwbpd")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ysu3w")
+value = 100.0
+metadata/_edit_use_anchors_ = true

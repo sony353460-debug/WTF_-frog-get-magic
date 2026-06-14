@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmalr5c1p25qb"
-path="res://.godot/imported/4-removebg-preview.png-af28b5f620e5ae214ba90141fa1a0635.ctex"
+path="res://.godot/imported/4-removebg-preview.png-969a31bd7369b7e3528e398e7c29f683.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemy/cow_attack/4-removebg-preview.png"
-dest_files=["res://.godot/imported/4-removebg-preview.png-af28b5f620e5ae214ba90141fa1a0635.ctex"]
+source_file="res://material/Enemy/cow_attack/4-removebg-preview.png"
+dest_files=["res://.godot/imported/4-removebg-preview.png-969a31bd7369b7e3528e398e7c29f683.ctex"]
 
 [params]
 
