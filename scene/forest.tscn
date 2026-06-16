@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cdma54she4yau" path="res://material/ground/小草地.png" id="15_0xhum"]
 [ext_resource type="Script" uid="uid://tpnw2og8g83u" path="res://script/tile_map_layer.gd" id="16_p7yhu"]
 [ext_resource type="Script" uid="uid://tkjy21jlp7dp" path="res://script/UI_manager.gd" id="17_p7yhu"]
+[ext_resource type="Script" uid="uid://d056j243edmhn" path="res://script/inventory_ui.gd" id="18_inventory"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cwbpd"]
 texture = ExtResource("15_0xhum")
@@ -130,7 +131,7 @@ tile_set = SubResource("TileSet_ysu3w")
 script = ExtResource("16_p7yhu")
 
 [node name="player" parent="." unique_id=971503981 instance=ExtResource("14_ja8kk")]
-position = Vector2(880, 1935)
+position = Vector2(873, 1951)
 
 [node name="Ground1" type="Sprite2D" parent="." unique_id=2023075217]
 position = Vector2(959, 1621)
@@ -155,6 +156,15 @@ texture = ExtResource("12_bqdkd")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=17125143]
 layer = 0
 script = ExtResource("17_p7yhu")
+
+[node name="InventoryUI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("18_inventory")
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=40667599]
 layout_mode = 3

@@ -8,16 +8,8 @@ const JUMP_VELOCITY = -500.0
 const MAX_JUMP_VELOCITY=-1500.0
 var can_move=true
 
-var currentHealth:
-	set(new_value):
-		currentHealth=new_value
-		emit_signal("playerHealthUpdated",currentHealth,MAX_HEALTH)
-const  MAX_HEALTH=100
 
-signal playerHealthUpdated(newValue,maxValue)
 
-func _ready():
-	currentHealth=MAX_HEALTH
 
 #每秒執行好幾次updateanimaed()
 func _process(delta):
@@ -86,8 +78,8 @@ func Shoot():
 
 func ApplyDamage(damage:int):
 
-	currentHealth-=damage
+	game_manager.currentHealth-=damage
 
-	if currentHealth<=0:
-		currentHealth=0
+	if game_manager.currentHealth<=0:
+		game_manager.currentHealth=0
 		

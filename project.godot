@@ -14,6 +14,10 @@ config/name="WTF_frog_get_magic"
 run/main_scene="uid://cxsbsjk3o84ea"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[autoload]
+
+game_manager="*uid://bpf5nwvqn3qp0"
+
 [display]
 
 window/size/viewport_width=1920

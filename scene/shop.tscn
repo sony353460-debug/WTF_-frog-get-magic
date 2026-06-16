@@ -4,6 +4,13 @@
 [ext_resource type="Script" uid="uid://ddsublwwum1i5" path="res://script/shop.gd" id="2_uyq3k"]
 [ext_resource type="Texture2D" uid="uid://b3qabused0hqy" path="res://material/object/hamlet/標價購買按鈕.png" id="3_0wha2"]
 [ext_resource type="Texture2D" uid="uid://csgsc0rb17rg4" path="res://material/object/hamlet/商店關閉按鈕.png" id="4_brg4d"]
+[ext_resource type="Texture2D" uid="uid://oqshn0wptcxl" path="res://material/object/hamlet/莓果.png" id="5_0wha2"]
+[ext_resource type="Script" uid="uid://c6a5h3e518gav" path="res://script/control.gd" id="5_mskdj"]
+[ext_resource type="Texture2D" uid="uid://cvc7hwebcum8e" path="res://material/object/hamlet/樹皮.png" id="6_08gde"]
+[ext_resource type="Texture2D" uid="uid://cf84f00vvvd8m" path="res://material/object/hamlet/水.png" id="7_mskdj"]
+[ext_resource type="Texture2D" uid="uid://d0ye5bwfr1th8" path="res://material/object/hamlet/藥水.png" id="8_s07y5"]
+[ext_resource type="Texture2D" uid="uid://b2nqjdmqxhq50" path="res://material/object/hamlet/蚊子.png" id="9_oh3n3"]
+[ext_resource type="Texture2D" uid="uid://e5sft3s7hsif" path="res://material/object/hamlet/蝴蝶.png" id="10_ayspg"]
 
 [node name="ShopGuiBackground" type="Sprite2D" unique_id=939426232]
 position = Vector2(960, 496)
@@ -11,7 +18,7 @@ scale = Vector2(0.91851854, 0.9185185)
 texture = ExtResource("1_uyq3k")
 script = ExtResource("2_uyq3k")
 
-[node name="Label" type="Label" parent="." unique_id=681199232]
+[node name="coins_label" type="Label" parent="." unique_id=681199232]
 offset_left = -418.4677
 offset_top = -237.08063
 offset_right = -274.4677
@@ -26,6 +33,7 @@ offset_left = -297.62097
 offset_top = 33.854797
 offset_right = -87.62097
 offset_bottom = 104.8548
+pivot_offset = Vector2(101, 31)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.58456355, 0.58456355, 0.58456355, 1)
@@ -40,6 +48,7 @@ offset_left = -10.709656
 offset_top = 34.12091
 offset_right = 199.29034
 offset_bottom = 105.12091
+pivot_offset = Vector2(101, 31)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
 theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
@@ -53,6 +62,7 @@ offset_left = 277.29034
 offset_top = 34.12091
 offset_right = 487.29034
 offset_bottom = 105.12091
+pivot_offset = Vector2(101, 31)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
 theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
@@ -66,6 +76,7 @@ offset_left = -299.70966
 offset_top = 334.1209
 offset_right = -89.709656
 offset_bottom = 405.1209
+pivot_offset = Vector2(101, 31)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
 theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
@@ -79,6 +90,7 @@ offset_left = -9.620972
 offset_top = 333.8548
 offset_right = 200.37903
 offset_bottom = 404.8548
+pivot_offset = Vector2(101, 31)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
 theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
@@ -92,6 +104,7 @@ offset_left = 278.37903
 offset_top = 333.8548
 offset_right = 488.37903
 offset_bottom = 404.8548
+pivot_offset = Vector2(101, 31)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
 theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
@@ -105,6 +118,7 @@ offset_left = 544.9113
 offset_top = -245.63715
 offset_right = 625.9113
 offset_bottom = -166.63715
+pivot_offset = Vector2(36, 35)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
 theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
@@ -114,4 +128,204 @@ icon = ExtResource("4_brg4d")
 flat = true
 icon_alignment = 1
 
+[node name="Control" type="Control" parent="." unique_id=1427983726]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -285.24194
+offset_top = -136.08871
+offset_right = -90.362915
+offset_bottom = 34.838715
+script = ExtResource("5_mskdj")
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1483080584]
+layout_mode = 0
+offset_left = 1.1444092e-05
+offset_top = 42.45967
+offset_right = 156.00002
+offset_bottom = 166.45967
+pivot_offset = Vector2(78, 62)
+texture = ExtResource("5_0wha2")
+
+[node name="Label" type="Label" parent="Control" unique_id=1822258096]
+visible = false
+layout_mode = 0
+offset_left = 172.01614
+offset_top = 51.16935
+offset_right = 296.1291
+offset_bottom = 114.31452
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "這是一個莓果"
+
+[node name="Control2" type="Control" parent="." unique_id=1151068577]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 6.5322876
+offset_top = -131.73389
+offset_right = 201.41132
+offset_bottom = 39.193542
+script = ExtResource("5_mskdj")
+
+[node name="TextureRect" type="TextureRect" parent="Control2" unique_id=1013429257]
+layout_mode = 0
+offset_left = 1.1444092e-05
+offset_top = 42.45967
+offset_right = 156.00002
+offset_bottom = 166.45967
+pivot_offset = Vector2(90, 62)
+texture = ExtResource("6_08gde")
+
+[node name="Label" type="Label" parent="Control2" unique_id=1290782101]
+visible = false
+layout_mode = 0
+offset_left = 172.01614
+offset_top = 51.16935
+offset_right = 296.1291
+offset_bottom = 114.31452
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "這是一個樹皮"
+
+[node name="Control3" type="Control" parent="." unique_id=101186048]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 289.59674
+offset_top = -131.73389
+offset_right = 484.47577
+offset_bottom = 39.193542
+script = ExtResource("5_mskdj")
+
+[node name="TextureRect" type="TextureRect" parent="Control3" unique_id=377067570]
+layout_mode = 0
+offset_left = 44.63733
+offset_top = 26.129028
+offset_right = 141.63733
+offset_bottom = 162.12903
+pivot_offset = Vector2(48, 68)
+texture = ExtResource("7_mskdj")
+
+[node name="Label" type="Label" parent="Control3" unique_id=466015952]
+visible = false
+layout_mode = 0
+offset_left = 172.01614
+offset_top = 51.16935
+offset_right = 296.1291
+offset_bottom = 114.31452
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "這是一杯水"
+
+[node name="Control4" type="Control" parent="." unique_id=1404172657]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -285.24194
+offset_top = 162.21774
+offset_right = -90.362915
+offset_bottom = 333.14517
+script = ExtResource("5_mskdj")
+
+[node name="TextureRect" type="TextureRect" parent="Control4" unique_id=23178219]
+layout_mode = 0
+offset_left = 39.193542
+offset_top = 5.4435425
+offset_right = 147.19354
+offset_bottom = 165.44354
+pivot_offset = Vector2(54, 80)
+texture = ExtResource("8_s07y5")
+
+[node name="Label" type="Label" parent="Control4" unique_id=792695416]
+visible = false
+layout_mode = 0
+offset_left = 172.01614
+offset_top = 51.16935
+offset_right = 296.1291
+offset_bottom = 114.31452
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "這是一個藥水"
+
+[node name="Control5" type="Control" parent="." unique_id=1414692348]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 6.5322876
+offset_top = 167.66129
+offset_right = 201.41132
+offset_bottom = 338.5887
+script = ExtResource("5_mskdj")
+
+[node name="TextureRect" type="TextureRect" parent="Control5" unique_id=890088333]
+layout_mode = 0
+offset_left = 35.92723
+offset_top = 48.991943
+offset_right = 148.92723
+offset_bottom = 164.99194
+pivot_offset = Vector2(56, 58)
+texture = ExtResource("9_oh3n3")
+
+[node name="Label" type="Label" parent="Control5" unique_id=2132897975]
+visible = false
+layout_mode = 0
+offset_left = 172.01614
+offset_top = 51.16935
+offset_right = 296.1291
+offset_bottom = 114.31452
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "這是一個蚊子"
+
+[node name="Control6" type="Control" parent="." unique_id=1215533985]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 287.41937
+offset_top = 167.66129
+offset_right = 482.2984
+offset_bottom = 338.5887
+script = ExtResource("5_mskdj")
+
+[node name="TextureRect" type="TextureRect" parent="Control6" unique_id=1214968284]
+layout_mode = 0
+offset_left = 35.92742
+offset_top = 69.677444
+offset_right = 160.92743
+offset_bottom = 154.67744
+pivot_offset = Vector2(62, 42)
+texture = ExtResource("10_ayspg")
+
+[node name="Label" type="Label" parent="Control6" unique_id=1157761897]
+visible = false
+layout_mode = 0
+offset_left = 172.01614
+offset_top = 51.16935
+offset_right = 296.1291
+offset_bottom = 114.31452
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "這是一個蝴蝶"
+
+[connection signal="mouse_entered" from="goods_button1" to="." method="_on_goods_button_1_mouse_entered"]
+[connection signal="mouse_exited" from="goods_button1" to="." method="_on_goods_button_1_mouse_exited"]
+[connection signal="pressed" from="goods_button1" to="." method="_on_goods_button_1_pressed"]
+[connection signal="mouse_entered" from="goods_button2" to="." method="_on_goods_button_2_mouse_entered"]
+[connection signal="mouse_exited" from="goods_button2" to="." method="_on_goods_button_2_mouse_exited"]
+[connection signal="pressed" from="goods_button2" to="." method="_on_goods_button_2_pressed"]
+[connection signal="mouse_entered" from="goods_button3" to="." method="_on_goods_button_3_mouse_entered"]
+[connection signal="mouse_exited" from="goods_button3" to="." method="_on_goods_button_3_mouse_exited"]
+[connection signal="pressed" from="goods_button3" to="." method="_on_goods_button_3_pressed"]
+[connection signal="mouse_entered" from="goods_button4" to="." method="_on_goods_button_4_mouse_entered"]
+[connection signal="mouse_exited" from="goods_button4" to="." method="_on_goods_button_4_mouse_exited"]
+[connection signal="pressed" from="goods_button4" to="." method="_on_goods_button_4_pressed"]
+[connection signal="mouse_entered" from="goods_button5" to="." method="_on_goods_button_5_mouse_entered"]
+[connection signal="mouse_exited" from="goods_button5" to="." method="_on_goods_button_5_mouse_exited"]
+[connection signal="pressed" from="goods_button5" to="." method="_on_goods_button_5_pressed"]
+[connection signal="mouse_entered" from="goods_button6" to="." method="_on_goods_button_6_mouse_entered"]
+[connection signal="mouse_exited" from="goods_button6" to="." method="_on_goods_button_6_mouse_exited"]
+[connection signal="pressed" from="goods_button6" to="." method="_on_goods_button_6_pressed"]
+[connection signal="mouse_entered" from="exit_button" to="." method="_on_exit_button_mouse_entered"]
+[connection signal="mouse_exited" from="exit_button" to="." method="_on_exit_button_mouse_exited"]
 [connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
+[connection signal="mouse_entered" from="Control" to="Control" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control" to="Control" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Control2" to="Control2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control2" to="Control2" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Control3" to="Control3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control3" to="Control3" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Control4" to="Control4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control4" to="Control4" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Control5" to="Control5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control5" to="Control5" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Control6" to="Control6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Control6" to="Control6" method="_on_mouse_exited"]

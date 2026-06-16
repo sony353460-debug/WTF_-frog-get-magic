@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://b3kqehna82iy6" path="res://material/ground/ground2.png" id="11_1512q"]
 [ext_resource type="PackedScene" uid="uid://v8aw0yt1bxbs" path="res://scene/player.tscn" id="12_qofsl"]
 [ext_resource type="Texture2D" uid="uid://6bu0m28oad6y" path="res://material/ground/ground3.png" id="12_r0j3d"]
+[ext_resource type="PackedScene" uid="uid://cfp0kf6extwxb" path="res://scene/enemy.tscn" id="16_vb5y6"]
+[ext_resource type="Script" uid="uid://d056j243edmhn" path="res://script/inventory_ui.gd" id="18_inventory"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g5mv0"]
 texture = ExtResource("2_ext1m")
@@ -55,6 +57,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_g5mv0")
 
 [sub_resource type="FontFile" id="FontFile_pfad8"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -131,21 +136,6 @@ label_settings = SubResource("LabelSettings_pfad8")
 position = Vector2(5270, 590)
 collision_mask = 2
 
-[node name="Ground" type="Sprite2D" parent="." unique_id=1599179802]
-position = Vector2(959, 541)
-texture = ExtResource("5_7qh1y")
-metadata/_edit_lock_ = true
-
-[node name="Ground2" type="Sprite2D" parent="." unique_id=1979990150]
-position = Vector2(2878, 541)
-texture = ExtResource("11_1512q")
-metadata/_edit_lock_ = true
-
-[node name="Ground3" type="Sprite2D" parent="." unique_id=1817036649]
-position = Vector2(4798, 541)
-texture = ExtResource("12_r0j3d")
-metadata/_edit_lock_ = true
-
 [node name="enter_shop_block" parent="." unique_id=54979174 instance=ExtResource("4_eokgb")]
 position = Vector2(3707, 731)
 collision_mask = 2
@@ -154,6 +144,15 @@ metadata/_edit_lock_ = true
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1244732447]
 layer = 0
 script = ExtResource("11_48rbw")
+
+[node name="InventoryUI" type="Control" parent="CanvasLayer" unique_id=2002450275]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("18_inventory")
 
 [node name="shop" parent="CanvasLayer" unique_id=578752243 instance=ExtResource("7_48rbw")]
 position = Vector2(663, -392.00003)
@@ -181,7 +180,25 @@ metadata/_edit_use_anchors_ = true
 
 [node name="player" parent="." unique_id=272499636 instance=ExtResource("12_qofsl")]
 z_index = 1
-position = Vector2(971, 814)
+position = Vector2(945, 862)
+
+[node name="Ground" type="Sprite2D" parent="." unique_id=1599179802]
+position = Vector2(959, 541)
+texture = ExtResource("5_7qh1y")
+metadata/_edit_lock_ = true
+
+[node name="Ground2" type="Sprite2D" parent="." unique_id=1979990150]
+position = Vector2(2878, 541)
+texture = ExtResource("11_1512q")
+metadata/_edit_lock_ = true
+
+[node name="Ground3" type="Sprite2D" parent="." unique_id=1817036649]
+position = Vector2(4798, 541)
+texture = ExtResource("12_r0j3d")
+metadata/_edit_lock_ = true
+
+[node name="Enemy" parent="." unique_id=97723074 instance=ExtResource("16_vb5y6")]
+position = Vector2(1306, 931)
 
 [connection signal="body_entered" from="elder" to="elder" method="_on_body_entered"]
 [connection signal="body_exited" from="elder" to="elder" method="_on_body_exited"]
