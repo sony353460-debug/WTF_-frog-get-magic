@@ -130,7 +130,7 @@ tile_set = SubResource("TileSet_ysu3w")
 script = ExtResource("16_p7yhu")
 
 [node name="player" parent="." unique_id=971503981 instance=ExtResource("14_ja8kk")]
-position = Vector2(880, 1935)
+position = Vector2(873, 1951)
 
 [node name="Ground1" type="Sprite2D" parent="." unique_id=2023075217]
 position = Vector2(959, 1621)

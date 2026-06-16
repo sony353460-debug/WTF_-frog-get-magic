@@ -181,7 +181,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="player" parent="." unique_id=272499636 instance=ExtResource("12_qofsl")]
 z_index = 1
-position = Vector2(971, 814)
+position = Vector2(945, 862)
 
 [connection signal="body_entered" from="elder" to="elder" method="_on_body_entered"]
 [connection signal="body_exited" from="elder" to="elder" method="_on_body_exited"]
