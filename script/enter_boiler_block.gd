@@ -18,7 +18,7 @@ func _on_body_exited(body):
 		$Button.hide()
 
 func _on_button_pressed():
-	var shop_instance = preload("res://scene/shop.tscn").instantiate()
-	$"../CanvasLayer".add_child(shop_instance)
+	var boiler_instance = preload("res://scene/boiler.tscn").instantiate()
+	$"../CanvasLayer".add_child(boiler_instance)
 	
 	
