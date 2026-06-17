@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://tpnw2og8g83u" path="res://script/tile_map_layer.gd" id="16_p7yhu"]
 [ext_resource type="Script" uid="uid://tkjy21jlp7dp" path="res://script/UI_manager.gd" id="17_p7yhu"]
 [ext_resource type="Script" uid="uid://d056j243edmhn" path="res://script/inventory_ui.gd" id="18_inventory"]
+[ext_resource type="AudioStream" uid="uid://cf5kak1echwa2" path="res://music/Snowdin Town - Toby Fox (youtube).mp3" id="19_ysu3w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cwbpd"]
 texture = ExtResource("15_0xhum")
@@ -157,7 +158,7 @@ texture = ExtResource("12_bqdkd")
 layer = 0
 script = ExtResource("17_p7yhu")
 
-[node name="InventoryUI" type="Control" parent="CanvasLayer"]
+[node name="InventoryUI" type="Control" parent="CanvasLayer" unique_id=2070824491]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -185,3 +186,8 @@ theme_override_styles/background = SubResource("StyleBoxFlat_cwbpd")
 theme_override_styles/fill = SubResource("StyleBoxFlat_ysu3w")
 value = 100.0
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1007310681]
+stream = ExtResource("19_ysu3w")
+autoplay = true
+parameters/looping = true

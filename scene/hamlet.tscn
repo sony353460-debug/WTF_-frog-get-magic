@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://b3kqehna82iy6" path="res://material/ground/ground2.png" id="11_1512q"]
 [ext_resource type="PackedScene" uid="uid://v8aw0yt1bxbs" path="res://scene/player.tscn" id="12_qofsl"]
 [ext_resource type="Texture2D" uid="uid://6bu0m28oad6y" path="res://material/ground/ground3.png" id="12_r0j3d"]
-[ext_resource type="PackedScene" uid="uid://cfp0kf6extwxb" path="res://scene/enemy.tscn" id="16_vb5y6"]
+[ext_resource type="AudioStream" uid="uid://cf5kak1echwa2" path="res://music/Snowdin Town - Toby Fox (youtube).mp3" id="16_vb5y6"]
 [ext_resource type="Script" uid="uid://d056j243edmhn" path="res://script/inventory_ui.gd" id="18_inventory"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g5mv0"]
@@ -179,7 +179,6 @@ value = 100.0
 metadata/_edit_use_anchors_ = true
 
 [node name="player" parent="." unique_id=272499636 instance=ExtResource("12_qofsl")]
-z_index = 1
 position = Vector2(945, 862)
 
 [node name="Ground" type="Sprite2D" parent="." unique_id=1599179802]
@@ -197,8 +196,10 @@ position = Vector2(4798, 541)
 texture = ExtResource("12_r0j3d")
 metadata/_edit_lock_ = true
 
-[node name="Enemy" parent="." unique_id=97723074 instance=ExtResource("16_vb5y6")]
-position = Vector2(1306, 931)
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=857439421]
+stream = ExtResource("16_vb5y6")
+autoplay = true
+parameters/looping = true
 
 [connection signal="body_entered" from="elder" to="elder" method="_on_body_entered"]
 [connection signal="body_exited" from="elder" to="elder" method="_on_body_exited"]
