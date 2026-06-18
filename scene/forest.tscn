@@ -20,15 +20,15 @@
 [ext_resource type="Script" uid="uid://d056j243edmhn" path="res://script/inventory_ui.gd" id="18_inventory"]
 [ext_resource type="AudioStream" uid="uid://cf5kak1echwa2" path="res://music/Snowdin Town - Toby Fox (youtube).mp3" id="19_ysu3w"]
 [ext_resource type="PackedScene" uid="uid://b81vtbydxr76h" path="res://scene/flying_enemy.tscn" id="20_dki5c"]
+[ext_resource type="PackedScene" uid="uid://bfoiqevayj63b" path="res://scene/berry1.tscn" id="20_kuygm"]
 [ext_resource type="PackedScene" uid="uid://cfp0kf6extwxb" path="res://scene/enemy.tscn" id="21_7mab7"]
 [ext_resource type="Texture2D" uid="uid://bah81ejuqylhl" path="res://material/ground/雨林跳台/圖層 1.png" id="21_cvgm6"]
+[ext_resource type="PackedScene" uid="uid://i3owm6f2lnpe" path="res://scene/berry2.tscn" id="21_xw4on"]
+[ext_resource type="PackedScene" uid="uid://dfnj076dxinpq" path="res://scene/berry3.tscn" id="22_bqdkd"]
 [ext_resource type="Texture2D" uid="uid://da432sbmv3e0t" path="res://material/ground/雨林跳台/圖層 2.png" id="22_kuygm"]
 [ext_resource type="Texture2D" uid="uid://dawfiv5ge7bkf" path="res://material/ground/雨林跳台/圖層 3.png" id="24_o4s7x"]
 [ext_resource type="Texture2D" uid="uid://c5bchaeu8glbb" path="res://material/ground/雨林跳台/圖層 4.png" id="25_r506i"]
 [ext_resource type="Texture2D" uid="uid://d0o8rsqjjw8nl" path="res://material/ground/雨林跳台/圖層 5.png" id="26_gjs4v"]
-[ext_resource type="PackedScene" uid="uid://bfoiqevayj63b" path="res://scene/berry1.tscn" id="20_kuygm"]
-[ext_resource type="PackedScene" uid="uid://i3owm6f2lnpe" path="res://scene/berry2.tscn" id="21_xw4on"]
-[ext_resource type="PackedScene" uid="uid://dfnj076dxinpq" path="res://scene/berry3.tscn" id="22_bqdkd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cwbpd"]
 texture = ExtResource("15_0xhum")
@@ -143,16 +143,18 @@ script = ExtResource("16_p7yhu")
 
 [node name="Berry" parent="." unique_id=52277649 instance=ExtResource("20_kuygm")]
 position = Vector2(863, 1917)
+collision_mask = 2
 
 [node name="Berry2" parent="." unique_id=1270360930 instance=ExtResource("21_xw4on")]
 position = Vector2(4925, 1927)
+collision_mask = 2
 
 [node name="Berry3" parent="." unique_id=359136480 instance=ExtResource("22_bqdkd")]
 position = Vector2(5211, 1923)
+collision_mask = 2
 
 [node name="player" parent="." unique_id=971503981 instance=ExtResource("14_ja8kk")]
 position = Vector2(873, 1951)
-collision_layer = 1
 
 [node name="Ground1" type="Sprite2D" parent="." unique_id=2023075217]
 position = Vector2(959, 1621)
@@ -247,6 +249,7 @@ texture = ExtResource("25_r506i")
 [node name="圖層5" type="Sprite2D" parent="." unique_id=1555901627]
 position = Vector2(4695, 614)
 texture = ExtResource("26_gjs4v")
+
 [connection signal="body_entered" from="Berry2" to="Berry2" method="_on_body_entered"]
 [connection signal="body_exited" from="Berry2" to="Berry2" method="_on_body_exited"]
 [connection signal="body_entered" from="Berry3" to="Berry3" method="_on_body_entered"]
