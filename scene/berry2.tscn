@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://i3owm6f2lnpe"]
+
+[ext_resource type="Script" uid="uid://b1s65cpru8p0m" path="res://script/berry.gd" id="1_juent"]
+[ext_resource type="Texture2D" uid="uid://dlgcpkmj37ros" path="res://material/object/forest/中間的莓果(可拾取).png" id="1_pcklh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_juent"]
+radius = 162.01234
+
+[node name="Berry2" type="Area2D" unique_id=1270360930]
+script = ExtResource("1_juent")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1490288083]
+texture = ExtResource("1_pcklh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=178983127]
+shape = SubResource("CircleShape2D_juent")
+
+[node name="Label" type="Label" parent="." unique_id=199546752]
+offset_left = 69.32085
+offset_top = -80.41218
+offset_right = 244.00935
+offset_bottom = -8.318504
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1

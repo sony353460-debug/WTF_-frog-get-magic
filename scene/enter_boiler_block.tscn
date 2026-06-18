@@ -18,3 +18,7 @@ offset_top = 113.0
 offset_right = 369.0
 offset_bottom = 161.0
 text = "進入合成"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -4,7 +4,9 @@ extends Node
 const SAVE_PATH = "user://savegame.data"
 
 # 自訂訊號：當金幣改變時，通知全遊戲有需要的 UI 自行刷新
+signal playerHealthUpdated(newValue,maxValue)
 signal coins_changed(new_amount: int)
+signal inventory_updated
 
 var currentHealth:
 	set(new_value):
@@ -12,19 +14,35 @@ var currentHealth:
 		emit_signal("playerHealthUpdated",currentHealth,MAX_HEALTH)
 const  MAX_HEALTH=100
 
-signal playerHealthUpdated(newValue,maxValue)
+
 
 # 玩家的金幣數量，利用 setter 在改變時自動觸發訊號
 var coins: int = 100:
 	set(value):
 		coins = value
 		coins_changed.emit(coins) # 發射訊號
+#物品
+var item_database: Dictionary = {
+	"berrys": { "name": "莓果", "icon_path": "res://material/object/hamlet/莓果.png" },
+}
+#背包
+var backpack = ["","","","","","","","","","","","","","","","","","","",""]
+
 
 func _ready() -> void:
 	currentHealth=MAX_HEALTH
 
 	# 遊戲一啟動，自動讀取進度
 	load_game()
+	
+func add_item(item_name: String):
+	for i in range(backpack.size()):
+		if backpack[i] == "":
+			backpack[i] = item_name # 把 ID 塞進去背包
+			inventory_updated.emit() # 通知 UI 重新整理
+			print("🎒 背包最新狀況: ", backpack)
+			return true
+	print("🎒 背包最新狀況: ", backpack)
 
 # === 儲存系統 ===
 func save_game() -> void:

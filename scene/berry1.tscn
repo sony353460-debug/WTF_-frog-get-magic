@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bfoiqevayj63b"]
+
+[ext_resource type="Texture2D" uid="uid://ld7sjubghrbe" path="res://material/object/forest/前面的莓果(可拾取).png" id="1_7su70"]
+[ext_resource type="Script" uid="uid://b1s65cpru8p0m" path="res://script/berry.gd" id="1_wnevq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wnevq"]
+radius = 166.42201
+
+[node name="Berry" type="Area2D" unique_id=52277649]
+scale = Vector2(0.7212838, 0.7212838)
+script = ExtResource("1_wnevq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1644785418]
+shape = SubResource("CircleShape2D_wnevq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=479368179]
+texture = ExtResource("1_7su70")
+
+[node name="Label" type="Label" parent="." unique_id=1023755251]
+offset_left = 69.32085
+offset_top = -80.41218
+offset_right = 244.00935
+offset_bottom = -8.318504
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

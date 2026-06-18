@@ -1,20 +1,15 @@
 [gd_scene format=3 uid="uid://ch37nrkiql706"]
 
 [ext_resource type="Script" uid="uid://qfin7j5wl0pd" path="res://script/inventory.gd" id="1_inventory"]
+[ext_resource type="Texture2D" uid="uid://chkfo33l6o2nl" path="res://material/object/UI/backpack/背包UI.png" id="2_ql1wb"]
+[ext_resource type="Texture2D" uid="uid://d2ndmfpb23nvo" path="res://material/object/UI/backpack/背包按鈕.png" id="3_fb012"]
+[ext_resource type="Script" uid="uid://4fm1v63oukoh" path="res://scene/grid_container.gd" id="3_kpipp"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
-bg_color = Color(0.08, 0.11, 0.1, 0.94)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.72, 0.56, 0.28, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kpipp"]
 
-[node name="Inventory" type="Control"]
+[sub_resource type="LabelSettings" id="LabelSettings_kpipp"]
+
+[node name="Inventory" type="Control" unique_id=771733420]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,157 +19,433 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_inventory")
 
-[node name="Panel" type="PanelContainer" parent="."]
+[node name="Panel" type="TextureRect" parent="." unique_id=2080111748]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -360.0
-offset_top = -260.0
-offset_right = 360.0
-offset_bottom = 260.0
+offset_left = -963.0
+offset_top = -578.0
+offset_right = 957.0
+offset_bottom = 502.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+texture = ExtResource("2_ql1wb")
 
-[node name="MarginContainer" type="MarginContainer" parent="Panel"]
-layout_mode = 2
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=1017815445]
+layout_mode = 0
+offset_left = 678.0
+offset_top = 342.0
+offset_right = 1175.0
+offset_bottom = 961.0
 theme_override_constants/margin_left = 28
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 28
 theme_override_constants/margin_bottom = 26
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer" unique_id=1977133826]
 layout_mode = 2
 theme_override_constants/separation = 18
 
-[node name="Header" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 48)
+[node name="GridContainer" type="GridContainer" parent="Panel/MarginContainer/VBoxContainer" unique_id=637790284]
 layout_mode = 2
-
-[node name="Title" type="Label" parent="Panel/MarginContainer/VBoxContainer/Header"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(0.97, 0.9, 0.73, 1)
-theme_override_font_sizes/font_size = 34
-text = "背包"
-
-[node name="exit_button" type="Button" parent="Panel/MarginContainer/VBoxContainer/Header"]
-custom_minimum_size = Vector2(48, 48)
-layout_mode = 2
-focus_mode = 0
-text = "X"
-
-[node name="GridContainer" type="GridContainer" parent="Panel/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/h_separation = 14
-theme_override_constants/v_separation = 14
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 30
 columns = 4
+script = ExtResource("3_kpipp")
 
-[node name="Slot1" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
+[node name="Slot1" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=951291632]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot1"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
-theme_override_font_sizes/font_size = 26
-text = "-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Slot2" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot2"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot1" unique_id=1648048822]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
 theme_override_font_sizes/font_size = 26
 text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Slot3" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot1" unique_id=1956947330]
 layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot3"]
+[node name="Slot2" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1138293135]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot2" unique_id=646843679]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
 theme_override_font_sizes/font_size = 26
 text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Slot4" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot2" unique_id=121570461]
 layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot4"]
+[node name="Slot3" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=2029316392]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot3" unique_id=528991170]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
 theme_override_font_sizes/font_size = 26
 text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Slot5" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot3" unique_id=1749118828]
 layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot5"]
+[node name="Slot4" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1765409721]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot4" unique_id=736763453]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
 theme_override_font_sizes/font_size = 26
 text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Slot6" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot4" unique_id=299164916]
 layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot6"]
+[node name="Slot5" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1079928870]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot5" unique_id=844603565]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
 theme_override_font_sizes/font_size = 26
 text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Slot7" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot5" unique_id=1848483452]
 layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot7"]
+[node name="Slot6" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=750611658]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot6" unique_id=748227557]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
 theme_override_font_sizes/font_size = 26
 text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Slot8" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(150, 86)
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot6" unique_id=1510342989]
 layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot8"]
+[node name="Slot7" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=193765356]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot7" unique_id=70939780]
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
 theme_override_font_sizes/font_size = 26
 text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="EmptyLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot7" unique_id=2137963500]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.82, 0.78, 0.66, 1)
-theme_override_font_sizes/font_size = 22
-text = "目前沒有道具"
-horizontal_alignment = 1
+expand_mode = 1
+stretch_mode = 5
 
-[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Header/exit_button" to="." method="_on_exit_button_pressed"]
+[node name="Slot8" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=2119307005]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot8" unique_id=657009142]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot8" unique_id=1902054588]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot9" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1093350089]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot9" unique_id=550224114]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot9" unique_id=2090355587]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot10" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1283191056]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot10" unique_id=912744794]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot10" unique_id=229911647]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot11" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1867623112]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot11" unique_id=1603257436]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot11" unique_id=1069249811]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot12" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1465389103]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot12" unique_id=1817129713]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot12" unique_id=1035351826]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot13" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1971288170]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot13" unique_id=1756944302]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot13" unique_id=1148281246]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot14" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1538718829]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot14" unique_id=669553984]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot14" unique_id=207588592]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot15" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=847850510]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot15" unique_id=444317453]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot15" unique_id=57031506]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot16" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1077456830]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot16" unique_id=1279232937]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot16" unique_id=1569639130]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot17" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=14446318]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot17" unique_id=1598046024]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot17" unique_id=493700092]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot18" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=817769600]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot18" unique_id=1324076812]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot18" unique_id=168670895]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Slot19" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer/GridContainer" unique_id=1248969436]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_kpipp")
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot19" unique_id=1413252149]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.44, 0.35, 1)
+theme_override_font_sizes/font_size = 26
+text = "-"
+label_settings = SubResource("LabelSettings_kpipp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/GridContainer/Slot19" unique_id=1532716150]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="exit_button" type="Button" parent="Panel" unique_id=1022869779]
+layout_mode = 0
+offset_left = 1151.0
+offset_top = 277.0
+offset_right = 1262.0
+offset_bottom = 380.0
+pivot_offset = Vector2(55, 51)
+icon = ExtResource("3_fb012")
+flat = true
+
+[connection signal="mouse_entered" from="Panel/exit_button" to="." method="_on_exit_button_mouse_entered"]
+[connection signal="mouse_exited" from="Panel/exit_button" to="." method="_on_exit_button_mouse_exited"]
+[connection signal="pressed" from="Panel/exit_button" to="." method="_on_exit_button_pressed"]
