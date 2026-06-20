@@ -1,7 +1,7 @@
 extends Area2D
 
 var is_player_in_range = false
-
+@onready var player: CharacterBody2D = $"../player"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

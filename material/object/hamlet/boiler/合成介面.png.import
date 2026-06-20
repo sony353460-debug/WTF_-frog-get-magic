@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lxqfbsyda42l"
-path="res://.godot/imported/完成圖.png-e5ee8ac3e863910f1cab175a01fc41a3.ctex"
+uid="uid://cn77y0who0kqx"
+path="res://.godot/imported/合成介面.png-2434b3fb74bd77ed30f049adf6997f93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/完成圖.png"
-dest_files=["res://.godot/imported/完成圖.png-e5ee8ac3e863910f1cab175a01fc41a3.ctex"]
+source_file="res://material/object/hamlet/boiler/合成介面.png"
+dest_files=["res://.godot/imported/合成介面.png-2434b3fb74bd77ed30f049adf6997f93.ctex"]
 
 [params]
 

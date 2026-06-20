@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4llqhhfxyoc"
-path="res://.godot/imported/商品欄位.png-b855b907d620d87bf40274b90e7a041a.ctex"
+uid="uid://e5sft3s7hsif"
+path="res://.godot/imported/蝴蝶.png-f15375e3cf7e36ea5ea51822bce36bf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/商品欄位.png"
-dest_files=["res://.godot/imported/商品欄位.png-b855b907d620d87bf40274b90e7a041a.ctex"]
+source_file="res://material/object/hamlet/shop/蝴蝶.png"
+dest_files=["res://.godot/imported/蝴蝶.png-f15375e3cf7e36ea5ea51822bce36bf2.ctex"]
 
 [params]
 

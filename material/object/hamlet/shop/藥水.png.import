@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oqshn0wptcxl"
-path="res://.godot/imported/莓果.png-2aa3826344d78f4d94ada5e412298b2f.ctex"
+uid="uid://d0ye5bwfr1th8"
+path="res://.godot/imported/藥水.png-ae7221e888a47c82463a826234bd28f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/莓果.png"
-dest_files=["res://.godot/imported/莓果.png-2aa3826344d78f4d94ada5e412298b2f.ctex"]
+source_file="res://material/object/hamlet/shop/藥水.png"
+dest_files=["res://.godot/imported/藥水.png-ae7221e888a47c82463a826234bd28f2.ctex"]
 
 [params]
 

@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36oyh"]
 size = Vector2(374.5, 314.5)
 
-[node name="Node2D" type="Area2D" unique_id=1076448237]
+[node name="enter_boiler_block" type="Area2D" unique_id=1076448237]
 script = ExtResource("1_6d7tx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500016352]

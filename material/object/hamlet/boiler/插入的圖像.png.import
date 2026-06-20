@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bclddrt84li7v"
-path="res://.godot/imported/擁有資金.png-2a84a8d1f96b4229f750bf1a5f6e6e14.ctex"
+uid="uid://dh6en3xf1p4bo"
+path="res://.godot/imported/插入的圖像.png-ac9fdcb8046dba959e84dd73137ee39d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/擁有資金.png"
-dest_files=["res://.godot/imported/擁有資金.png-2a84a8d1f96b4229f750bf1a5f6e6e14.ctex"]
+source_file="res://material/object/hamlet/boiler/插入的圖像.png"
+dest_files=["res://.godot/imported/插入的圖像.png-ac9fdcb8046dba959e84dd73137ee39d.ctex"]
 
 [params]
 

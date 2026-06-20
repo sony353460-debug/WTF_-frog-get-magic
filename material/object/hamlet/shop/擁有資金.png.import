@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3qabused0hqy"
-path="res://.godot/imported/標價購買按鈕.png-3ed0c6f59abf2eb6f051a62b0445db9b.ctex"
+uid="uid://bclddrt84li7v"
+path="res://.godot/imported/擁有資金.png-9b5fef4356b4378f1f350ef8d31293c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/標價購買按鈕.png"
-dest_files=["res://.godot/imported/標價購買按鈕.png-3ed0c6f59abf2eb6f051a62b0445db9b.ctex"]
+source_file="res://material/object/hamlet/shop/擁有資金.png"
+dest_files=["res://.godot/imported/擁有資金.png-9b5fef4356b4378f1f350ef8d31293c8.ctex"]
 
 [params]
 
