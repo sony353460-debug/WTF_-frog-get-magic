@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdomjw6pqjfff"
-path="res://.godot/imported/商品.png-602ce9f6561b5548d10972e39263fd3c.ctex"
+uid="uid://c75xsdchmm6tl"
+path="res://.godot/imported/美味蛙飯.png-a69c74aa9cc554e6d42068ae5a93a2db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/商品.png"
-dest_files=["res://.godot/imported/商品.png-602ce9f6561b5548d10972e39263fd3c.ctex"]
+source_file="res://material/object/hamlet/boiler/美味蛙飯.png"
+dest_files=["res://.godot/imported/美味蛙飯.png-a69c74aa9cc554e6d42068ae5a93a2db.ctex"]
 
 [params]
 

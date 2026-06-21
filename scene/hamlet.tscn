@@ -133,7 +133,7 @@ offset_right = 228.0
 offset_bottom = -88.0
 label_settings = SubResource("LabelSettings_pfad8")
 
-[node name="Node2D" parent="." unique_id=291247710 instance=ExtResource("9_48rbw")]
+[node name="board" parent="." unique_id=291247710 instance=ExtResource("9_48rbw")]
 position = Vector2(5270, 590)
 collision_mask = 2
 
@@ -141,6 +141,10 @@ collision_mask = 2
 position = Vector2(3707, 731)
 collision_mask = 2
 metadata/_edit_lock_ = true
+
+[node name="enter_boiler_block" parent="." unique_id=1076448237 instance=ExtResource("17_twink")]
+position = Vector2(4410, 627)
+collision_mask = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1244732447]
 layer = 0
@@ -201,9 +205,6 @@ metadata/_edit_lock_ = true
 stream = ExtResource("16_vb5y6")
 autoplay = true
 parameters/looping = true
-
-[node name="Node2D2" parent="." unique_id=1076448237 instance=ExtResource("17_twink")]
-position = Vector2(4410, 627)
 
 [connection signal="body_entered" from="elder" to="elder" method="_on_body_entered"]
 [connection signal="body_exited" from="elder" to="elder" method="_on_body_exited"]

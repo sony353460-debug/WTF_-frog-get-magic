@@ -23,7 +23,15 @@ var coins: int = 100:
 		coins_changed.emit(coins) # 發射訊號
 #物品
 var item_database: Dictionary = {
-	"berrys": { "name": "莓果", "icon_path": "res://material/object/hamlet/莓果.png" },
+	"berrys": { "name": "莓果", "icon_path": "res://material/object/hamlet/shop/莓果.png" },
+	"tree": { "name": "樹皮", "icon_path": "res://material/object/hamlet/shop/樹皮.png" },
+	"water": { "name": "水", "icon_path": "res://material/object/hamlet/shop/水.png" },
+	"potion": { "name": "藥水", "icon_path": "res://material/object/hamlet/shop/藥水.png" },
+	"fly": { "name": "蒼蠅", "icon_path": "res://material/object/hamlet/shop/蒼蠅.png" },
+	"butterfly": { "name": "蝴蝶", "icon_path": "res://material/object/hamlet/shop/蝴蝶.png" },
+	"restoration_potion": { "name": "回復藥水", "icon_path": "res://material/object/hamlet/boiler/回復藥水.png" },
+	"invincible_potion": { "name": "蝴蝶", "icon_path": "res://material/object/hamlet/bliler/無敵藥水.png" },
+	"food": { "name": "美味蛙飯", "icon_path": "res://material/object/hamlet/boiler/美味蛙飯.png" },
 }
 #背包
 var backpack = ["","","","","","","","","","","","","","","","","","","",""]
@@ -35,10 +43,22 @@ func _ready() -> void:
 	# 遊戲一啟動，自動讀取進度
 	load_game()
 	
+#新增背包內的物品
 func add_item(item_name: String):
 	for i in range(backpack.size()):
 		if backpack[i] == "":
 			backpack[i] = item_name # 把 ID 塞進去背包
+			inventory_updated.emit() # 通知 UI 重新整理
+			print("🎒 背包最新狀況: ", backpack)
+			return true
+	print("🎒 背包最新狀況: ", backpack)
+	
+#背包內的物品
+func delete_item(item_name: String):
+	for i in range(backpack.size()):
+		i = backpack.size() - i - 1
+		if backpack[i] == item_name:
+			backpack[i] =  ""# 把有特定物品的位置清空
 			inventory_updated.emit() # 通知 UI 重新整理
 			print("🎒 背包最新狀況: ", backpack)
 			return true

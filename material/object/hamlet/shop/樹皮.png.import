@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf84f00vvvd8m"
-path="res://.godot/imported/水.png-03266a17b69e5d05805f43ac83eef0c4.ctex"
+uid="uid://cvc7hwebcum8e"
+path="res://.godot/imported/樹皮.png-5cffc0c02cd179e0c1b7c1d4fce5b361.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/水.png"
-dest_files=["res://.godot/imported/水.png-03266a17b69e5d05805f43ac83eef0c4.ctex"]
+source_file="res://material/object/hamlet/shop/樹皮.png"
+dest_files=["res://.godot/imported/樹皮.png-5cffc0c02cd179e0c1b7c1d4fce5b361.ctex"]
 
 [params]
 

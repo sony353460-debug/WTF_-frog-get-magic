@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://v8aw0yt1bxbs"]
 
 [ext_resource type="Script" uid="uid://bkhg8qqbkf65c" path="res://script/character_body_2d.gd" id="1_hjaqi"]
-[ext_resource type="Script" uid="uid://dibswkaq2fcc5" path="res://scene/level_bounds.gd" id="2_ct4mp"]
+[ext_resource type="Script" uid="uid://dibswkaq2fcc5" path="res://script/level_bounds.gd" id="2_ct4mp"]
 [ext_resource type="Texture2D" uid="uid://b8aotqre1chen" path="res://material/Charcter_img/frogrun-Photoroom.png" id="2_fvtld"]
 [ext_resource type="Texture2D" uid="uid://cnlswcqpgyr5d" path="res://material/Charcter_img/frogdie.png" id="3_ct4mp"]
 [ext_resource type="AudioStream" uid="uid://blt71yw8p8ypt" path="res://audio/frogwalk.wav" id="5_s4jxa"]

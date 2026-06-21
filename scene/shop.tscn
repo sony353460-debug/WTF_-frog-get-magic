@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://bg3vs5c2sjdg1"]
 
-[ext_resource type="Texture2D" uid="uid://lxqfbsyda42l" path="res://material/object/hamlet/完成圖.png" id="1_uyq3k"]
+[ext_resource type="Texture2D" uid="uid://lxqfbsyda42l" path="res://material/object/hamlet/shop/完成圖.png" id="1_uyq3k"]
 [ext_resource type="Script" uid="uid://ddsublwwum1i5" path="res://script/shop.gd" id="2_uyq3k"]
-[ext_resource type="Texture2D" uid="uid://b3qabused0hqy" path="res://material/object/hamlet/標價購買按鈕.png" id="3_0wha2"]
-[ext_resource type="Texture2D" uid="uid://csgsc0rb17rg4" path="res://material/object/hamlet/商店關閉按鈕.png" id="4_brg4d"]
-[ext_resource type="Texture2D" uid="uid://oqshn0wptcxl" path="res://material/object/hamlet/莓果.png" id="5_0wha2"]
+[ext_resource type="Texture2D" uid="uid://b3qabused0hqy" path="res://material/object/hamlet/shop/標價購買按鈕.png" id="3_0wha2"]
+[ext_resource type="Texture2D" uid="uid://csgsc0rb17rg4" path="res://material/object/hamlet/shop/商店關閉按鈕.png" id="4_brg4d"]
+[ext_resource type="Texture2D" uid="uid://oqshn0wptcxl" path="res://material/object/hamlet/shop/莓果.png" id="5_0wha2"]
 [ext_resource type="Script" uid="uid://c6a5h3e518gav" path="res://script/control.gd" id="5_mskdj"]
-[ext_resource type="Texture2D" uid="uid://cvc7hwebcum8e" path="res://material/object/hamlet/樹皮.png" id="6_08gde"]
-[ext_resource type="Texture2D" uid="uid://cf84f00vvvd8m" path="res://material/object/hamlet/水.png" id="7_mskdj"]
-[ext_resource type="Texture2D" uid="uid://d0ye5bwfr1th8" path="res://material/object/hamlet/藥水.png" id="8_s07y5"]
-[ext_resource type="Texture2D" uid="uid://b2nqjdmqxhq50" path="res://material/object/hamlet/蚊子.png" id="9_oh3n3"]
-[ext_resource type="Texture2D" uid="uid://e5sft3s7hsif" path="res://material/object/hamlet/蝴蝶.png" id="10_ayspg"]
+[ext_resource type="Texture2D" uid="uid://cvc7hwebcum8e" path="res://material/object/hamlet/shop/樹皮.png" id="6_08gde"]
+[ext_resource type="Texture2D" uid="uid://cf84f00vvvd8m" path="res://material/object/hamlet/shop/水.png" id="7_mskdj"]
+[ext_resource type="Texture2D" uid="uid://d0ye5bwfr1th8" path="res://material/object/hamlet/shop/藥水.png" id="8_s07y5"]
+[ext_resource type="Texture2D" uid="uid://b2nqjdmqxhq50" path="res://material/object/hamlet/shop/蒼蠅.png" id="9_oh3n3"]
+[ext_resource type="Texture2D" uid="uid://e5sft3s7hsif" path="res://material/object/hamlet/shop/蝴蝶.png" id="10_ayspg"]
 
 [node name="ShopGuiBackground" type="Sprite2D" unique_id=939426232]
 position = Vector2(960, 496)
@@ -94,7 +94,7 @@ pivot_offset = Vector2(101, 31)
 theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
 theme_override_colors/font_pressed_color = Color(0.58431375, 0.58431375, 0.58431375, 1)
 theme_override_colors/font_hover_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
-text = "蚊子"
+text = "蒼蠅"
 icon = ExtResource("3_0wha2")
 flat = true
 icon_alignment = 1
@@ -266,7 +266,7 @@ offset_top = 51.16935
 offset_right = 296.1291
 offset_bottom = 114.31452
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "這是一個蚊子"
+text = "這是一個蒼蠅"
 
 [node name="Control6" type="Control" parent="." unique_id=1215533985]
 layout_mode = 3

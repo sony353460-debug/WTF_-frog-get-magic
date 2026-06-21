@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2nqjdmqxhq50"
-path="res://.godot/imported/蚊子.png-e74a2331d395107f6829112ba09e94a9.ctex"
+uid="uid://csgsc0rb17rg4"
+path="res://.godot/imported/商店關閉按鈕.png-963105c81d67421f6d9474d40ab80217.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/蚊子.png"
-dest_files=["res://.godot/imported/蚊子.png-e74a2331d395107f6829112ba09e94a9.ctex"]
+source_file="res://material/object/hamlet/shop/商店關閉按鈕.png"
+dest_files=["res://.godot/imported/商店關閉按鈕.png-963105c81d67421f6d9474d40ab80217.ctex"]
 
 [params]
 

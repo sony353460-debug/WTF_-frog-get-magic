@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvc7hwebcum8e"
-path="res://.godot/imported/樹皮.png-ff04adf0e07c33ab140716da916b17df.ctex"
+uid="uid://c3f34yhr3lgd0"
+path="res://.godot/imported/回復藥水.png-6eea269cae95b481a9fa34c7de42b5bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/樹皮.png"
-dest_files=["res://.godot/imported/樹皮.png-ff04adf0e07c33ab140716da916b17df.ctex"]
+source_file="res://material/object/hamlet/boiler/回復藥水.png"
+dest_files=["res://.godot/imported/回復藥水.png-6eea269cae95b481a9fa34c7de42b5bf.ctex"]
 
 [params]
 

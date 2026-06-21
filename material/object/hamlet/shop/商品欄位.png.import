@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csgsc0rb17rg4"
-path="res://.godot/imported/商店關閉按鈕.png-3fcefb1c5f41b4f8990a5a4a33df43b6.ctex"
+uid="uid://c4llqhhfxyoc"
+path="res://.godot/imported/商品欄位.png-be66c7723f8050eeea35a2735ed4b0c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://material/object/hamlet/商店關閉按鈕.png"
-dest_files=["res://.godot/imported/商店關閉按鈕.png-3fcefb1c5f41b4f8990a5a4a33df43b6.ctex"]
+source_file="res://material/object/hamlet/shop/商品欄位.png"
+dest_files=["res://.godot/imported/商品欄位.png-be66c7723f8050eeea35a2735ed4b0c0.ctex"]
 
 [params]
 
