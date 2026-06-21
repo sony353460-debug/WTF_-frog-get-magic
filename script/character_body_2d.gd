@@ -1,6 +1,10 @@
 extends CharacterBody2D
 class_name PlayertControllor
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var audio_move: AudioStreamPlayer2D = $AudioMove
+@onready var audio_water_ball: AudioStreamPlayer2D = $AudioWaterBall
+@onready var audio_jump: AudioStreamPlayer2D = $AudioJump
+
 
 
 const SPEED = 300.0
@@ -28,12 +32,16 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = MAX_JUMP_VELOCITY
+		audio_jump.play()
 	if Input.is_action_just_released("ui_accept") and velocity.y<JUMP_VELOCITY:
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("ui_left", "ui_right")
+	if animated_sprite_2d.animation == "Run":
+		if animated_sprite_2d.frame ==4:
+			audio_move.play()
 	if direction:
 		velocity.x = direction * SPEED
 	else:
@@ -41,6 +49,7 @@ func _physics_process(delta: float) -> void:
 	#射擊
 	if Input.is_action_just_pressed("Shoot"):
 		TryToShoot()
+		audio_water_ball.play()
 
 	move_and_slide()
 #動畫帧

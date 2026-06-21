@@ -4,6 +4,9 @@
 [ext_resource type="Script" uid="uid://dibswkaq2fcc5" path="res://scene/level_bounds.gd" id="2_ct4mp"]
 [ext_resource type="Texture2D" uid="uid://b8aotqre1chen" path="res://material/Charcter_img/frogrun-Photoroom.png" id="2_fvtld"]
 [ext_resource type="Texture2D" uid="uid://cnlswcqpgyr5d" path="res://material/Charcter_img/frogdie.png" id="3_ct4mp"]
+[ext_resource type="AudioStream" uid="uid://blt71yw8p8ypt" path="res://audio/frogwalk.wav" id="5_s4jxa"]
+[ext_resource type="AudioStream" uid="uid://do65iscsgv6pa" path="res://audio/frogjump.wav" id="6_hp4bs"]
+[ext_resource type="AudioStream" uid="uid://bllvly5jjbckf" path="res://audio/waterball.wav" id="7_g2vtq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ic0hd"]
 radius = 92.65527
@@ -123,4 +126,13 @@ script = ExtResource("2_ct4mp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1981972883]
 sprite_frames = SubResource("SpriteFrames_11d3u")
-animation = &"Idile"
+animation = &"Run"
+
+[node name="AudioMove" type="AudioStreamPlayer2D" parent="." unique_id=1031700759]
+stream = ExtResource("5_s4jxa")
+
+[node name="AudioJump" type="AudioStreamPlayer2D" parent="." unique_id=1855351178]
+stream = ExtResource("6_hp4bs")
+
+[node name="AudioWaterBall" type="AudioStreamPlayer2D" parent="." unique_id=619554738]
+stream = ExtResource("7_g2vtq")
