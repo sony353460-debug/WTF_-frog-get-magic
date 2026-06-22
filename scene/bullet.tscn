@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://nf6vuiy64f2b"]
 
 [ext_resource type="Script" uid="uid://dkwo7cuymmls" path="res://script/bullet.gd" id="1_v8qja"]
-[ext_resource type="Texture2D" uid="uid://cidomtlrya5sv" path="res://material/Enemy/Bullet.png" id="2_t4vbm"]
+[ext_resource type="Texture2D" uid="uid://bjjw0i7udco7l" path="res://material/Enemy/waterball-removebg-preview.png" id="2_xw300"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2b2rl"]
-size = Vector2(20, 6)
+[sub_resource type="CircleShape2D" id="CircleShape2D_m2l4i"]
 
 [node name="bullet" type="Area2D" unique_id=446730977]
 scale = Vector2(2, 2)
@@ -12,10 +11,11 @@ collision_layer = 0
 collision_mask = 5
 script = ExtResource("1_v8qja")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=41483163]
-shape = SubResource("RectangleShape2D_2b2rl")
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2140810209]
-texture = ExtResource("2_t4vbm")
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("2_xw300")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=41483163]
+shape = SubResource("CircleShape2D_m2l4i")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

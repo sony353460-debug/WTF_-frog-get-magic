@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bbnvni1gyseoy" path="res://material/ground/ground1.png" id="5_7qh1y"]
 [ext_resource type="PackedScene" uid="uid://bq0trpqh68rfh" path="res://scene/elder.tscn" id="5_1512q"]
 [ext_resource type="PackedScene" uid="uid://bg3vs5c2sjdg1" path="res://scene/shop.tscn" id="7_48rbw"]
+[ext_resource type="AudioStream" uid="uid://djyr76lp0cln0" path="res://audio/VillageHead.wav" id="7_yhab7"]
 [ext_resource type="PackedScene" uid="uid://dmw3ydypdg5r4" path="res://scene/board.tscn" id="9_48rbw"]
 [ext_resource type="Script" uid="uid://tkjy21jlp7dp" path="res://script/UI_manager.gd" id="11_48rbw"]
 [ext_resource type="Texture2D" uid="uid://b3kqehna82iy6" path="res://material/ground/ground2.png" id="11_1512q"]
@@ -132,6 +133,9 @@ offset_top = -169.0
 offset_right = 228.0
 offset_bottom = -88.0
 label_settings = SubResource("LabelSettings_pfad8")
+
+[node name="AudioVillageHead" type="AudioStreamPlayer2D" parent="elder" unique_id=431507065]
+stream = ExtResource("7_yhab7")
 
 [node name="board" parent="." unique_id=291247710 instance=ExtResource("9_48rbw")]
 position = Vector2(5270, 590)

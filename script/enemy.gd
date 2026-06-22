@@ -60,6 +60,7 @@ func ApplyDamage(damage:int):
 		isDead=true
 		animated_sprite_2d.play("Die")
 		set_collision_layer_value(3,false)
+		game_manager.coins+=10
 		await get_tree().create_timer(2).timeout
 		queue_free()
 

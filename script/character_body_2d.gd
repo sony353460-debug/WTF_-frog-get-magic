@@ -49,7 +49,7 @@ func _physics_process(delta: float) -> void:
 	#射擊
 	if Input.is_action_just_pressed("Shoot"):
 		TryToShoot()
-		audio_water_ball.play()
+		
 
 	move_and_slide()
 #動畫帧
@@ -65,13 +65,15 @@ func updateanimaed():
 			animated_sprite_2d.play("Run")
 		else:
 			animated_sprite_2d.play("Idile")
-			
+	else:
+			animated_sprite_2d.play("Idile")
 var is_Shooting = false
-const SHOOT_DURATION = 0.249
+const SHOOT_DURATION = 0.5
 func TryToShoot():
 	if is_Shooting:
 		return # 如果正在射擊中，則不重複觸發
 	is_Shooting = true
+	audio_water_ball.play()
 	Shoot()          # 呼叫生成子彈 
 	
 	# 等待冷卻時間結束後，重設射擊狀態
