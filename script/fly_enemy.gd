@@ -6,7 +6,7 @@ class_name FlyingEnemyController
 @onready var area_2d_container: Node2D = $Area2D_Container
 @onready var ray_cast_2d_dawnward: RayCast2D = $CollisionShape2D/RayCast2D_Dawnward
 
-var currentHealth: int = 70
+var currentHealth: int = 10
 var isDead: bool = false
 var isAttacking: bool = false
 

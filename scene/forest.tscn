@@ -29,6 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://dawfiv5ge7bkf" path="res://material/ground/雨林跳台/圖層 3.png" id="24_o4s7x"]
 [ext_resource type="Texture2D" uid="uid://c5bchaeu8glbb" path="res://material/ground/雨林跳台/圖層 4.png" id="25_r506i"]
 [ext_resource type="Texture2D" uid="uid://d0o8rsqjjw8nl" path="res://material/ground/雨林跳台/圖層 5.png" id="26_gjs4v"]
+[ext_resource type="PackedScene" uid="uid://g4fcrksmk53v" path="res://scene/borad_go_village.tscn" id="30_776yd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cwbpd"]
 texture = ExtResource("15_0xhum")
@@ -249,6 +250,10 @@ texture = ExtResource("25_r506i")
 [node name="圖層5" type="Sprite2D" parent="." unique_id=1555901627]
 position = Vector2(4695, 614)
 texture = ExtResource("26_gjs4v")
+
+[node name="Node2D" parent="." unique_id=291247710 instance=ExtResource("30_776yd")]
+position = Vector2(55, 1662)
+collision_mask = 2
 
 [connection signal="body_entered" from="Berry2" to="Berry2" method="_on_body_entered"]
 [connection signal="body_exited" from="Berry2" to="Berry2" method="_on_body_exited"]

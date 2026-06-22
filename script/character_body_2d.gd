@@ -21,6 +21,8 @@ func _process(delta):
 
 func _physics_process(delta: float) -> void:
 	if game_manager.currentHealth<=0:
+		velocity.y=1000
+		move_and_slide()
 		return
 	if can_move==false:
 		animated_sprite_2d.play("Idile")
@@ -55,7 +57,7 @@ func _physics_process(delta: float) -> void:
 #動畫帧
 func updateanimaed():
 	if game_manager.currentHealth<=0:
-
+		
 		return
 	if velocity.x!=0:
 		animated_sprite_2d.flip_h=velocity.x<0
@@ -100,3 +102,6 @@ func ApplyDamage(damage:int):
 	if game_manager.currentHealth<=0:
 		game_manager.currentHealth=0
 		animated_sprite_2d.play("Die")
+		
+		
+		
