@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dl631po8ta8c"]
+
+[ext_resource type="Script" uid="uid://v7vvgfeb8eme" path="res://script/animation.gd" id="1_bk6kq"]
+[ext_resource type="Texture2D" uid="uid://b5chnf7kgc5tq" path="res://material/animation/IMG_0283.png" id="2_l4u7y"]
+[ext_resource type="Texture2D" uid="uid://b23vh8865wn2v" path="res://material/animation/IMG_0284.png" id="3_ikf6m"]
+[ext_resource type="Texture2D" uid="uid://wrjipeorjhfs" path="res://material/animation/IMG_0286.png" id="4_bk6kq"]
+[ext_resource type="Texture2D" uid="uid://cnjgacdliohyy" path="res://material/animation/IMG_0285.png" id="4_txgbv"]
+
+[node name="animation" type="Control" unique_id=1060872035]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bk6kq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=980261049]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1540596531]
+layout_mode = 2
+
+[node name="slot1" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=470488989]
+layout_mode = 2
+texture = ExtResource("2_l4u7y")
+
+[node name="slot2" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=164696385]
+layout_mode = 2
+texture = ExtResource("3_ikf6m")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=2134086376]
+layout_mode = 2
+
+[node name="slot3" type="TextureRect" parent="VBoxContainer/HBoxContainer2" unique_id=364818076]
+layout_mode = 2
+texture = ExtResource("4_txgbv")
+
+[node name="slot4" type="TextureRect" parent="VBoxContainer/HBoxContainer2" unique_id=2024164530]
+layout_mode = 2
+texture = ExtResource("4_bk6kq")
