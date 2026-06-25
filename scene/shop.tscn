@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://d0ye5bwfr1th8" path="res://material/object/hamlet/shop/藥水.png" id="8_s07y5"]
 [ext_resource type="Texture2D" uid="uid://b2nqjdmqxhq50" path="res://material/object/hamlet/shop/蒼蠅.png" id="9_oh3n3"]
 [ext_resource type="Texture2D" uid="uid://e5sft3s7hsif" path="res://material/object/hamlet/shop/蝴蝶.png" id="10_ayspg"]
+[ext_resource type="AudioStream" uid="uid://dhpl42j3c2gof" path="res://audio/buy.wav" id="12_oh3n3"]
+[ext_resource type="AudioStream" uid="uid://dsspjkljjywm5" path="res://audio/in_out_shop.wav" id="13_ayspg"]
 
 [node name="ShopGuiBackground" type="Sprite2D" unique_id=939426232]
 position = Vector2(960, 496)
@@ -295,6 +297,12 @@ offset_right = 296.1291
 offset_bottom = 114.31452
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "這是一個蝴蝶"
+
+[node name="AudioBuy" type="AudioStreamPlayer" parent="." unique_id=1084905039]
+stream = ExtResource("12_oh3n3")
+
+[node name="AudioInOut" type="AudioStreamPlayer" parent="." unique_id=1634592021]
+stream = ExtResource("13_ayspg")
 
 [connection signal="mouse_entered" from="goods_button1" to="." method="_on_goods_button_1_mouse_entered"]
 [connection signal="mouse_exited" from="goods_button1" to="." method="_on_goods_button_1_mouse_exited"]

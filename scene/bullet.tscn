@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dkwo7cuymmls" path="res://script/bullet.gd" id="1_v8qja"]
 [ext_resource type="Texture2D" uid="uid://bjjw0i7udco7l" path="res://material/Enemy/waterball-removebg-preview.png" id="2_xw300"]
+[ext_resource type="AudioStream" uid="uid://dcvtxxyjqm1no" path="res://audio/waterballbye.wav" id="3_m2l4i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m2l4i"]
 
@@ -17,5 +18,8 @@ texture = ExtResource("2_xw300")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=41483163]
 shape = SubResource("CircleShape2D_m2l4i")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=619913422]
+stream = ExtResource("3_m2l4i")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bmvafqjrxpa16" path="res://material/object/hamlet/boiler/無敵藥水.png" id="7_uywcf"]
 [ext_resource type="Texture2D" uid="uid://c75xsdchmm6tl" path="res://material/object/hamlet/boiler/美味蛙飯.png" id="8_qqkj1"]
 [ext_resource type="Texture2D" uid="uid://c7g52f5j7nrj8" path="res://material/object/hamlet/boiler/退出按鈕.png" id="9_2gsui"]
+[ext_resource type="AudioStream" uid="uid://bn0sscvs067rf" path="res://audio/guruguru.wav" id="10_uywcf"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2gsui"]
 
@@ -196,6 +197,9 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_3nk6m")
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 5
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=600034943]
+stream = ExtResource("10_uywcf")
 
 [connection signal="mouse_entered" from="page1" to="." method="_on_page_1_mouse_entered"]
 [connection signal="mouse_exited" from="page1" to="." method="_on_page_1_mouse_exited"]

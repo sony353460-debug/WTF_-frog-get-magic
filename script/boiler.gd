@@ -1,6 +1,7 @@
 extends Sprite2D
 
 @onready var slots: Array = $"MarginContainer/VBoxContainer/GridContainer".get_children()
+@onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
 #合成一的素材
 var synthesis1 = ["water","tree","berrys"]
 var synthesis2 = ["water","tree","butterfly"]
@@ -124,6 +125,7 @@ func _on_check_mouse_exited() -> void:
 	var tween = create_tween()
 	tween.tween_property($check, "scale", Vector2(1.0, 1.0), 0.15).set_trans(Tween.TRANS_SINE)
 func _on_check_pressed() -> void:
+	audio_stream_player.play()
 	if statue == 1:
 		if inventory_items.has(synthesis1[0]) and inventory_items.has(synthesis1[1]) and inventory_items.has(synthesis1[2]):
 			game_manager.add_item("restoration_potion")

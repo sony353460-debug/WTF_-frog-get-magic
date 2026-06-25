@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://tvpbiq4qper"]
 
 [ext_resource type="Script" uid="uid://c773egj7k0pqu" path="res://script/enter_shop_block.gd" id="1_iuafe"]
+[ext_resource type="AudioStream" uid="uid://dsspjkljjywm5" path="res://audio/in_out_shop.wav" id="2_jnbsk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5hmeg"]
 size = Vector2(466, 432)
@@ -15,6 +16,9 @@ shape = SubResource("RectangleShape2D_5hmeg")
 offset_right = 129.0
 offset_bottom = 51.0
 text = "進入商店"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1594202903]
+stream = ExtResource("2_jnbsk")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
