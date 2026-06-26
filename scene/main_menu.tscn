@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cydbxbfymcge7"]
 
-[ext_resource type="Texture2D" uid="uid://b8k77jsqumvle" path="res://material/menu/首頁.png" id="1_hxu56"]
+[ext_resource type="Texture2D" uid="uid://dbfpn6c1qkc3u" path="res://material/object/UI/main_menu.jpg" id="1_hxu56"]
 [ext_resource type="Script" uid="uid://ufuj3br1x018" path="res://script/main_menu.gd" id="2_hxu56"]
 
 [node name="MainMenu" type="Sprite2D" unique_id=11213055]
@@ -9,18 +9,34 @@ texture = ExtResource("1_hxu56")
 script = ExtResource("2_hxu56")
 
 [node name="start_button" type="Button" parent="." unique_id=574271314]
-offset_left = -634.0
-offset_top = -156.0
-offset_right = -239.0
-offset_bottom = -32.0
+self_modulate = Color(0, 0, 0, 1)
+offset_left = -727.0
+offset_top = -177.0
+offset_right = -332.0
+offset_bottom = -53.0
+theme_override_font_sizes/font_size = 30
 text = "進入遊戲"
+flat = true
 
 [node name="set_button" type="Button" parent="." unique_id=900568783]
-offset_left = -634.0
-offset_top = -1.0
-offset_right = -240.0
-offset_bottom = 129.0
+self_modulate = Color(0, 0, 0, 1)
+offset_left = -727.0
+offset_top = -6.0
+offset_right = -333.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 30
 text = "遊戲設定"
+flat = true
+
+[node name="set_button2" type="Button" parent="." unique_id=1757363537]
+self_modulate = Color(0, 0, 0, 1)
+offset_left = -727.0
+offset_top = 162.0
+offset_right = -333.0
+offset_bottom = 292.0
+theme_override_font_sizes/font_size = 30
+text = "離開遊戲"
+flat = true
 
 [connection signal="mouse_entered" from="start_button" to="." method="_on_start_button_mouse_entered"]
 [connection signal="mouse_exited" from="start_button" to="." method="_on_start_button_mouse_exited"]

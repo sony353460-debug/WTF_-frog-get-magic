@@ -18,7 +18,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-	
+
 
 #退出按鈕
 func _on_exit_button_mouse_entered() -> void:
@@ -45,7 +45,8 @@ func _on_page_2_mouse_entered() -> void:
 func _on_page_2_mouse_exited() -> void:
 	pass # Replace with function body.
 func _on_page_2_pressed() -> void:
-	pass # Replace with function body.
+	pass
+	# Replace with function body.
 	
 #合成一
 func _on_material_mouse_entered() -> void:

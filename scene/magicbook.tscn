@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b32x0j7307e4a"]
+
+[ext_resource type="Texture2D" uid="uid://bjd386461deww" path="res://material/object/UI/S__1015820-removebg-preview.png" id="1_1fael"]
+
+[node name="Node2D" type="Sprite2D" unique_id=175873309]
+position = Vector2(960, 525)
+scale = Vector2(2.88, 2.88)
+texture = ExtResource("1_1fael")
+
+[node name="Button" type="Button" parent="." unique_id=1467675346]
+offset_right = 8.0
+offset_bottom = 8.0
